@@ -2,7 +2,7 @@ Rank,Name,City,State,Public/Private,Undergraduate Population,Student Population,
 1,Harvard University,Cambridge,MA,Private,13844,31120,14327,49870,69600,146800,5,1460,1590,32,35,www.harvard.edu
 2,Stanford University,Stanford,CA,Private,8402,17534,13261,50134,69109,145200,5,1390,1540,32,35,www.stanford.edu
 3,Yale University,New Haven,CT,Private,6483,12974,18627,50897,71290,138300,7,1460,1580,32,35,www.yale.edu
-4,Massachusetts Institute of Technology,Cambridge,MA,Private,4680,11466,20771,43248,67430,155200,7,1490,1570,33,35,www.web.mit.edu
+4,Massachusetts Institute of Technology,Cambridge,MA,Private,4680,11466,20771,43248,67430,155200,7,1490,1570,33,35,web.mit.edu
 5,Princeton University,Princeton,NJ,Private,5659,8273,9327,48088,66150,139400,6,1430,1570,31,35,www.princeton.edu
 6,University of Pennsylvania,Philadelphia,PA,Private,13437,25367,24242,44801,71715,133900,9,1420,1560,32,35,www.upenn.edu
 7,Brown University,Providence,RI,Private,7390,10095,30205,42455,71050,127600,8,1405,1570,31,35,www.brown.edu

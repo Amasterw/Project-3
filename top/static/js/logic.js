@@ -32,8 +32,9 @@ var baseMaps = {
 // Initialize all of the LayerGroups we'll be using
 var layers = {
   PUBLIC: new L.LayerGroup(),
-  PRIVATE_NONPROFIT: new L.LayerGroup(),
-  PRIVATE_FORPROFIT: new L.LayerGroup()
+  PRIVATE: new L.LayerGroup()
+  //PRIVATE_NONPROFIT: new L.LayerGroup(),
+  //PRIVATE_FORPROFIT: new L.LayerGroup()
 };
 
 var maxBounds = [
@@ -49,8 +50,9 @@ var map = L.map("map-id", {
   zoom: 8,
   layers: [
     layers.PUBLIC,
-    layers.PRIVATE_NONPROFIT,
-    layers.PRIVATE_FORPROFIT
+    layers.PRIVATE
+    //layers.PRIVATE_NONPROFIT,
+    //layers.PRIVATE_FORPROFIT
   ]
 });
 map.setMaxBounds(maxBounds);
@@ -62,8 +64,9 @@ base.addTo(map);
 // Create an overlays object to add to the layer control
 var overlays = {
   "PUBLIC": layers.PUBLIC,
-  "PRIVATE NON-PROFIT": layers.PRIVATE_NONPROFIT,
-  "PRIVATE FOR-PROFIT": layers.PRIVATE_FORPROFIT
+  "PRIVATE": layers.PRIVATE
+ // "PRIVATE NON-PROFIT": layers.PRIVATE_NONPROFIT,
+ // "PRIVATE FOR-PROFIT": layers.PRIVATE_FORPROFIT
 };
 
 // Create a control for our layers, add our overlay layers to it
@@ -85,23 +88,30 @@ info.addTo(map);
 // Initialize an object containing icons for each layer group
 var icons = {
   PUBLIC: L.ExtraMarkers.icon({
-    icon: "ion-circled",
+    icon: "ion-minus-circled",
     iconColor: "white",
     markerColor: "blue",
     shape: "penta"
   }),
-  PRIVATE_NONPROFIT: L.ExtraMarkers.icon({
-    icon: "ion-minus-circled",
-    iconColor: "white",
-    markerColor: "yellow",
-    shape: "penta"
-  }),
-  PRIVATE_FORPROFIT: L.ExtraMarkers.icon({
+  PRIVATE: L.ExtraMarkers.icon({
     icon: "ion-plus-circled",
     iconColor: "white",
-    markerColor: "red",
+    markerColor: "green",
     shape: "penta"
-  })
+  }),
+
+  // PRIVATE_NONPROFIT: L.ExtraMarkers.icon({
+  //   icon: "ion-minus-circled",
+  //   iconColor: "white",
+  //   markerColor: "yellow",
+  //   shape: "penta"
+  // }),
+  // PRIVATE_FORPROFIT: L.ExtraMarkers.icon({
+  //   icon: "ion-plus-circled",
+  //   iconColor: "white",
+  //   markerColor: "red",
+  //   shape: "penta"
+  // })
 };
 
 // Perform an API call to the Citi Bike Station Information endpoint
@@ -109,15 +119,16 @@ d3.json("static/data/top_college_final_latlon_json.json", function(data) {
   
 
   // When the first API call is complete, perform another call to the Citi Bike Station Status endpoint
-    console.log(data);
+    console.log(data.length);
     console.log(data[0].geometry);
 
 
     // Create an object to keep of the number of markers in each layer
     var typeCount = {
       PUBLIC: 0,
-      PRIVATE_NONPROFIT: 0,
-      PRIVATE_FORPROFIT: 0
+      PRIVATE: 0
+      // PRIVATE_NONPROFIT: 0,
+      // PRIVATE_FORPROFIT: 0
     };
 
     // Initialize a stationStatusCode, which will be used as a key to access the appropriate layers, icons, and station count for layer group
@@ -130,20 +141,23 @@ d3.json("static/data/top_college_final_latlon_json.json", function(data) {
       //var type = Object.assign({}, data[i].properties.NAME);
       var geometry=data[i].geometry;
       var properties=data[i].properties;
-      var type=data[i].properties['PUBLIC/PRIVATE']
+      var type=data[i].properties['Public/Private']
       //console.log(type);
       // If a station is listed but not installed, it's coming soon
-      if (type == 'PUBLIC') {
+      if (type == 'Public') {
         typeCode = "PUBLIC";
       }
-      // If a station has no bikes available, it's empty
-      else if (type == 'PRIVATE NON-PROFIT') {
-        typeCode = "PRIVATE_NONPROFIT";
+      else {
+        typeCode = "PRIVATE";
       }
-      // If a station is installed but isn't renting, it's out of order
-      else  {
-        typeCode = "PRIVATE_FORPROFIT";
-      }
+      // // If a station has no bikes available, it's empty
+      // else if (type == 'PRIVATE NON-PROFIT') {
+      //   typeCode = "PRIVATE_NONPROFIT";
+      // }
+      // // If a station is installed but isn't renting, it's out of order
+      // else  {
+      //   typeCode = "PRIVATE_FORPROFIT";
+      // }
       
 
       // Update the station count
@@ -156,10 +170,12 @@ d3.json("static/data/top_college_final_latlon_json.json", function(data) {
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
       newMarker.addTo(layers[typeCode]);
-
+      //console.log(properties.Name);
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML
-      newMarker.bindPopup(properties.NAME + "<br> Address: " + properties.ADDRESS + "<br> Website: <a href="+`properties.WEBSITE`+">" + properties.WEBSITE+"</a>");
+      var p=properties.Website;
+      newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
     }
+
 
     // Call the updateLegend function, which will... update the legend!
     updateLegend(typeCount);
@@ -168,8 +184,9 @@ d3.json("static/data/top_college_final_latlon_json.json", function(data) {
 // Update the legend's innerHTML with the last updated time and station count
 function updateLegend(typeCount) {
   document.querySelector(".legend").innerHTML = [
-    "<p class='out-of-order'>PUBLIC: " + typeCount.PUBLIC + "</p>",
-    "<p class='coming-soon'>PRIVATE NON-PROFIT: " + typeCount.PRIVATE_NONPROFIT + "</p>",
-    "<p class='empty'>PRIVATE FOR-PROFIT: " + typeCount.PRIVATE_FORPROFIT + "</p>"
+    "<p class='public'>PUBLIC: " + typeCount.PUBLIC + "</p>",
+    "<p class='private'>PRIVATE: " + typeCount.PRIVATE + "</p>"
+    // "<p class='coming-soon'>PRIVATE NON-PROFIT: " + typeCount.PRIVATE_NONPROFIT + "</p>",
+    // "<p class='empty'>PRIVATE FOR-PROFIT: " + typeCount.PRIVATE_FORPROFIT + "</p>"
   ].join("");
 }
