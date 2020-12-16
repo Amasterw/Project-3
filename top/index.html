@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
   crossorigin=""/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <!-- d3 JavaScript -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -23,12 +26,103 @@
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="background-color: #889ac7;" href="index.html">College Navigator</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <form id="form">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a id="first_chkbx" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type
+                    </a>
+                    <div id="type" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"></div>
+                    
+                    <!-- <div id="type" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <input type="checkbox" id="private" name="private" value="Private">
+                      <label for="vehicle1"> Private</label><br>
+                      <input type="checkbox" id="public" name="public" value="public">
+                      <label for="vehicle2"> Public</label><br>
+                    </div> -->
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      State
+                  </a>
+                  
+                  <div id="state" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Degrees offered
+                </a>
+                
+                <div id="degree" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  
+                </div>
+            </li>
+            </ul>
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+        </div>
+      </form>
+    </nav>
+</div>
 
   <!-- The div that holds our map -->
   <div id="map-id" ></div>
-  <!-- <div id="graph" class="col-lg-5 col-md-12">
-    <p>graph go here</p>
-  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <!-- <div id="map-id" ></div> -->
+
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-heading">Filter Search</div>
+            <div class="panel-body">
+              <form id="form">
+                <div class="form-group">
+                  <ul class="list-group" id="filters">
+                    <li class="filter list-group-item">
+                      <label for="date">Enter a Date</label>
+                      <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                      <label for="country">Choose a country</label>
+                      <select id="country" >
+                        <option value="none" selected disabled hidden> 
+                          Select an Option 
+                      </option>
+
+                      </select>  
+                      <label for="state">Choose a state</label>
+                      <select id="state" >
+                        
+                    </select>
+                    </li>
+                  </ul>
+                </div>
+                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+
+              </form>
+            </div>
+          </div>
+        </aside>
+  
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div id="graph" >
+          <p>Graph goes here</p>
+        </div>
+  
+      </div>
+    </div>  
+</div>
 
   <!-- D3 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
