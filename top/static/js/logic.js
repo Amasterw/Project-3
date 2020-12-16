@@ -47,7 +47,8 @@ var maxBounds = [
 // Create the map with our layers
 var map = L.map("map-id", {
   center: [39.8, -98.5],
-  zoom: 8,
+  //setView:[39.8, -98.5]
+  zoom: 10,
   layers: [
     layers.PUBLIC,
     layers.PRIVATE
@@ -117,64 +118,75 @@ var icons = {
 // Perform an API call to the Citi Bike Station Information endpoint
 d3.json("static/data/top_college_final_latlon_json.json", function(data) {
   
-
-  // When the first API call is complete, perform another call to the Citi Bike Station Status endpoint
-    console.log(data.length);
-    console.log(data[0].geometry);
+  console.log(data.length);
+  console.log(data[0].geometry);
 
 
-    // Create an object to keep of the number of markers in each layer
-    var typeCount = {
-      PUBLIC: 0,
-      PRIVATE: 0
-      // PRIVATE_NONPROFIT: 0,
-      // PRIVATE_FORPROFIT: 0
+  // Create an object to keep of the number of markers in each layer
+  var typeCount = {
+    PUBLIC: 0,
+     PRIVATE: 0
+     // PRIVATE_NONPROFIT: 0,
+     // PRIVATE_FORPROFIT: 0
     };
 
     // Initialize a stationStatusCode, which will be used as a key to access the appropriate layers, icons, and station count for layer group
-    var typeCode;
+  var typeCode;
 
-    // Loop through the stations (they're the same size and have partially matching data)
-    for (var i = 0; i < data.length; i++) {
-
-      // Create a new station object with properties of both station objects
-      //var type = Object.assign({}, data[i].properties.NAME);
-      var geometry=data[i].geometry;
-      var properties=data[i].properties;
-      var type=data[i].properties['Public/Private']
-      //console.log(type);
-      // If a station is listed but not installed, it's coming soon
-      if (type == 'Public') {
-        typeCode = "PUBLIC";
+  // Loop through the stations (they're the same size and have partially matching data)
+   for (var i = 0; i < data.length; i++) {
+      
+    var geometry=data[i].geometry;
+     var properties=data[i].properties;
+     var type=data[i].properties['Public/Private']
+     //console.log(type);
+      
+     if (type == 'Public') {
+      typeCode = "PUBLIC";
+    }
+    else {
+      typeCode = "PRIVATE";
       }
-      else {
-        typeCode = "PRIVATE";
-      }
-      // // If a station has no bikes available, it's empty
-      // else if (type == 'PRIVATE NON-PROFIT') {
-      //   typeCode = "PRIVATE_NONPROFIT";
-      // }
-      // // If a station is installed but isn't renting, it's out of order
-      // else  {
-      //   typeCode = "PRIVATE_FORPROFIT";
-      // }
       
 
-      // Update the station count
-      typeCount[typeCode]++;
+      
+    typeCount[typeCode]++;
       // Create a new marker with the appropriate icon and coordinates
-      var newMarker = L.marker([geometry.x, geometry.y], {
-        icon: icons[typeCode]
-      });
+    var newMarker = L.marker([geometry.x, geometry.y], {
+      icon: icons[typeCode]
+    });
       //console.log(geometry.x);
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
-      newMarker.addTo(layers[typeCode]);
+    newMarker.addTo(layers[typeCode]);
       //console.log(properties.Name);
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML
-      var p=properties.Website;
-      newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
+    var p=properties.Website;
+    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
     }
+
+    d3.json("static/data/us-states.json",function(us_data){
+      L.geoJson(us_data).addTo(map);
+      console.log(us_data.features[0].geometry)
+      console.log(us_data.features[0].geometry.coordinates);
+      console.log(us_data.features[0].geometry.coordinates[0]);
+      for(var i=0; i< us_data.features.length; i++){
+    
+        var borders=L.polygon([us_data.features[0].geometry.coordinates[0]], {
+          color: "yellow",
+          fillColor: "blue",
+          fillOpacity: 0.75
+        });
+        borders.bindPopup("hey");
+
+        console.log(borders);
+        borders.addTo(map);
+    
+      }
+
+      
+    });
+
 
 
     // Call the updateLegend function, which will... update the legend!
