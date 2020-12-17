@@ -6,10 +6,12 @@ body{
 }
 #map-id {
 
-  padding: 40px;
-  margin: 40px;
+  padding: 0px;
+  margin-top:60px;
+ 
+  margin-left: 180px;
   height: 60%;
-  width:50%;
+  width:80%;
 }
 
 .legend {

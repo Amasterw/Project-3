@@ -71,7 +71,7 @@ var overlays = {
 };
 
 // Create a control for our layers, add our overlay layers to it
-L.control.layers(baseMaps, overlays).addTo(map);
+L.control.layers(baseMaps).addTo(map);
 
 // Create a legend to display information about our map
 var info = L.control({
@@ -330,6 +330,7 @@ checkboxes_t.forEach(function(checkbox) {
               console.log(event);
 
               map.fitBounds(event.target.getBounds());
+
             }
           });
 
@@ -370,11 +371,11 @@ function update(){
   console.log(enabledType);
 
   for (var i=0;i<data.length;i++){
-    console.log(data[i].properties['Public/Private']);
+    //console.log(data[i].properties['Public/Private']);
     for (var j=0;j<enabledType.length;j++){
-      console.log(enabledType[j]);
+      //console.log(enabledType[j]);
       if(data[i].properties['Public/Private'] === enabledType[j]){
-        console.log(data[i]);
+        //console.log(data[i]);
 
         type_data.push(data[i]);
       }
@@ -387,6 +388,7 @@ function update(){
   //     new_data.push(filteredData);
     
   // }
+  console.log(enabledSettings);
   if(enabledSettings.length == 0){
     var state=[];
   for(var i=0;i<data.length;i++){
@@ -404,16 +406,93 @@ function update(){
   enabledSettings=state_f;
 
   }
+  console.log(enabledSettings);
+
   for (var i=0;i<type_data.length;i++){
     for (var j=0;j<enabledSettings.length;j++){
-      if(data[i].properties.State == enabledSettings[j]){
-        state_data.push(data[i]);
+      if(type_data[i].properties.State == enabledSettings[j]){
+        state_data.push(type_data[i]);
       }
     }
   }
   console.log(state_data);
 
+
+  // Create an object to keep of the number of markers in each layer
+  var typeCount = {
+    PUBLIC: 0,
+     PRIVATE: 0
+     // PRIVATE_NONPROFIT: 0,
+     // PRIVATE_FORPROFIT: 0
+    };
+
+    // Initialize a stationStatusCode, which will be used as a key to access the appropriate layers, icons, and station count for layer group
+  var typeCode;
+  console.log(state_data.length);
+  console.log(state_data[2].properties['Public/Private']);
+  console.log(layers);
+
+//   if(map.hasLayer(layers)){
+//     map.removeLayer(layers['PUBLIC']);
+//       map.removeLayer(layers['PRIVATE']);
+//     //map.removeLayer(DistrictLayer);
+//     //map.addLayer(DistrictLayer);
+//     map.addLayer(layers['PUBLIC']);
+//   map.addLayer(layers['PRIVATE']);
+//     //map.fitBounds(DistrictLayer.getBounds());
+// }
+// else{
+//     // map.addLayer(DistrictLayer);
+//     // map.fitBounds(DistrictLayer.getBounds());
+//     map.addLayer(layers['PUBLIC']);
+//   map.addLayer(layers['PRIVATE']);
+// }
+
+console.log(layers);
+
   
+   for (var i = 0; i < state_data.length; i++) {
+      
+    var geometry=state_data[i].geometry;
+     var properties=state_data[i].properties;
+     var type_temp=state_data[i].properties['Public/Private'];
+     console.log(type_temp);
+      
+     if (type_temp == 'Public') {
+      typeCode = "PUBLIC";
+    }
+    else {
+      typeCode = "PRIVATE";
+      }
+      
+    
+  
+
+      
+    typeCount[typeCode]++;
+    console.log(typeCount);
+      // Create a new marker with the appropriate icon and coordinates
+    var newMarker = L.marker([geometry.x, geometry.y], {
+      icon: icons[typeCode]
+    });
+      //console.log(geometry.x);
+      //console.log(layers[typeCode]);
+      // Add the new marker to the appropriate layer
+    newMarker.addTo(layers[typeCode]);
+    newMarker.addTo(map);
+    console.log(newMarker);
+    
+
+      //console.log(properties.Name);
+      // Bind a popup to the marker that will  display on click. This will be rendered as HTML
+    var p=properties.Website;
+    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
+      
+  }
+  //map.addLayer(layers['PUBLIC']);
+  updateLegend(typeCount);
+
+
 
   
   //console.log(filteredData);
