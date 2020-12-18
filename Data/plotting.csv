@@ -1,0 +1,651 @@
+Rank,Name,City,Code,Public/Private,Undergraduate Population,Student Population,Net Price,Average Grant Aid,Total Annual Cost,Alumni Salary,Acceptance Rate,SAT Lower,SAT Upper,ACT Lower,ACT Upper,Website,lat,lon,State
+1,Harvard University,Cambridge,MA,Private,13844,31120,14327.0,49870.0,69600,146800.0,5.0,1460.0,1590.0,32.0,35.0,www.harvard.edu,42.3750997,-71.1056157,Massachusetts
+2,Stanford University,Stanford,CA,Private,8402,17534,13261.0,50134.0,69109,145200.0,5.0,1390.0,1540.0,32.0,35.0,www.stanford.edu,37.426540700000004,-122.1702926,California
+3,Yale University,New Haven,CT,Private,6483,12974,18627.0,50897.0,71290,138300.0,7.0,1460.0,1580.0,32.0,35.0,www.yale.edu,41.3082138,-72.92505179999999,Connecticut
+4,Massachusetts Institute of Technology,Cambridge,MA,Private,4680,11466,20771.0,43248.0,67430,155200.0,7.0,1490.0,1570.0,33.0,35.0,www.web.mit.edu,42.3750997,-71.1056157,Massachusetts
+5,Princeton University,Princeton,NJ,Private,5659,8273,9327.0,48088.0,66150,139400.0,6.0,1430.0,1570.0,31.0,35.0,www.princeton.edu,40.3492744,-74.6592958,New Jersey
+6,University of Pennsylvania,Philadelphia,PA,Private,13437,25367,24242.0,44801.0,71715,133900.0,9.0,1420.0,1560.0,32.0,35.0,www.upenn.edu,39.9527237,-75.16352619999999,Pennsylvania
+7,Brown University,Providence,RI,Private,7390,10095,30205.0,42455.0,71050,127600.0,8.0,1405.0,1570.0,31.0,35.0,www.brown.edu,41.8239891,-71.4128343,Rhode Island
+8,California Institute of Technology,Pasadena,CA,Private,1002,2238,24245.0,41408.0,68901,151600.0,8.0,1530.0,1590.0,34.0,35.0,www.caltech.edu,34.14764520000001,-118.14447790000001,California
+9,Duke University,Durham,NC,Private,7184,16130,35737.0,47836.0,71764,132100.0,10.0,1380.0,1540.0,31.0,35.0,www.duke.edu,35.996653,-78.90180529999999,North Carolina
+10,Dartmouth College,Hanover,NH,Private,4693,6509,30421.0,47171.0,71827,130900.0,10.0,1430.0,1560.0,30.0,34.0,www.dartmouth.edu,43.703621999999996,-72.288666,New Hampshire
+11,Cornell University,Ithaca,NY,Private,14774,23016,31230.0,36164.0,70321,128200.0,13.0,1390.0,1550.0,31.0,34.0,www.cornell.edu,42.4396039,-76.49680190000001,New York
+12,Pomona College,Claremont,CA,Private,1599,1665,15840.0,48930.0,69725,117200.0,8.0,1370.0,1530.0,30.0,34.0,www.pomona.edu,34.0966764,-117.71977849999999,California
+13,"University of California, Berkeley",Berkeley,CA,Public,31133,41891,15859.0,18319.0,65003,131800.0,17.0,1260.0,1480.0,30.0,34.0,www.berkeley.edu,37.8708393,-122.27286389999999,California
+14,Columbia University,New York,NY,Private,8523,30454,24231.0,49185.0,74199,126800.0,7.0,1410.0,1570.0,31.0,34.0,www.columbia.edu,40.7127281,-74.0060152,New York
+15,Georgetown University,Washington,DC,Private,8194,19005,30107.0,41893.0,71580,122200.0,16.0,1350.0,1520.0,30.0,34.0,www.georgetown.edu,38.8949924,-77.0365581,District of Columbia
+16,University of Chicago,Chicago,IL,Private,6915,16227,25455.0,37883.0,75735,114200.0,9.0,1480.0,1580.0,32.0,35.0,www.uchicago.edu,41.875561600000005,-87.6244212,Illinois
+17,Northwestern University,Evanston,IL,Private,10163,22008,24047.0,44247.0,72980,115400.0,9.0,1420.0,1560.0,32.0,34.0,www.northwestern.edu,42.0447388,-87.6930459,Illinois
+18,University of Notre Dame,Notre Dame,IN,Private,8664,12467,28768.0,39590.0,69395,130500.0,19.0,1370.0,1520.0,32.0,34.0,www.nd.edu,41.704567700000005,-86.2382203,Indiana
+19,Williams College,Williamstown,MA,Private,2134,2227,22667.0,48050.0,70650,127500.0,15.0,1400.0,1570.0,31.0,35.0,www.williams.edu,42.6889156,-73.2246057,Massachusetts
+20,"University of Michigan, Ann Arbor",Ann Arbor,MI,Public,29773,46002,14860.0,18751.0,62176,112200.0,27.0,1330.0,1500.0,30.0,33.0,www.umich.edu,42.268156899999994,-83.7312291,Michigan
+21,Rice University,Houston,TX,Private,4036,7022,20237.0,36387.0,63158,129500.0,16.0,1490.0,1580.0,33.0,35.0,www.rice.edu,29.7589382,-95.36769740000001,Texas
+22,Johns Hopkins University,Baltimore,MD,Private,7825,25151,33586.0,38542.0,69863,117100.0,13.0,1450.0,1570.0,33.0,35.0,www.jhu.edu,39.2908816,-76.610759,Maryland
+23,Harvey Mudd College,Claremont,CA,Private,847,861,34464.0,33782.0,74428,158200.0,15.0,1470.0,1570.0,33.0,35.0,www.hmc.edu,34.0966764,-117.71977849999999,California
+24,United States Naval Academy,Annapolis,MD,Public,4495,4526,0.0,,0,152800.0,8.0,1150.0,1370.0,,,www.usna.edu,38.9786401,-76.492786,Maryland
+25,Swarthmore College,Swarthmore,PA,Private,1577,1630,20511.0,46105.0,68846,123200.0,11.0,1380.0,1540.0,31.0,34.0,www.swarthmore.edu,39.9020565,-75.34991240000001,Pennsylvania
+26,Bowdoin College,Brunswick,ME,Private,1816,1965,22810.0,41143.0,68070,112000.0,14.0,,,,,www.bowdoin.edu,43.905599,-69.9759915,Maine
+27,Vanderbilt University,Nashville,TN,Private,7006,12592,19959.0,41359.0,67392,119100.0,11.0,1440.0,1570.0,32.0,35.0,www.vanderbilt.edu,36.1622296,-86.7743531,Tennessee
+28,Amherst College,Amherst,MA,Private,1836,1945,22463.0,49467.0,71300,116500.0,13.0,1400.0,1560.0,32.0,34.0,www.amherst.edu,42.3685658,-72.505714,Massachusetts
+29,Claremont McKenna College,Claremont,CA,Private,1345,1364,26933.0,40673.0,71745,125400.0,10.0,1340.0,1510.0,30.0,34.0,www.claremontmckenna.edu,34.0966764,-117.71977849999999,California
+30,University of Southern California,Los Angeles,CA,Private,20582,45687,30232.0,36686.0,72209,120600.0,16.0,1300.0,1500.0,30.0,34.0,www.usc.edu,34.0536909,-118.24276599999999,California
+31,Washington University in St. Louis,St. Louis,MO,Private,8533,15303,28540.0,41977.0,71975,114900.0,16.0,1470.0,1570.0,32.0,34.0,www.wustl.edu,38.6264178,-90.1998378,Missouri
+32,United States Military Academy,West Point,NY,Public,4491,4568,0.0,,0,144000.0,10.0,1185.0,1400.0,23.0,28.0,www.usma.edu,40.8512481,-72.53598690000001,New York
+33,University of Virginia,Charlottesville,VA,Public,18432,24360,20547.0,21171.0,62633,117500.0,27.0,1310.0,1500.0,29.0,33.0,www.virginia.edu,38.029306,-78.4766781,Virginia
+34,Tufts University,Medford,MA,Private,5960,11449,32620.0,38605.0,70600,118100.0,15.0,1410.0,1540.0,31.0,34.0,www.tufts.edu,42.4184296,-71.10616390000001,Massachusetts
+35,New York University,New York,NY,Private,30252,51123,40336.0,31542.0,71790,117700.0,28.0,1290.0,1490.0,29.0,33.0,www.nyu.edu,40.7127281,-74.0060152,New York
+36,Middlebury College,Middlebury,VT,Private,2591,3855,26075.0,43491.0,69464,109800.0,17.0,1320.0,1510.0,30.0,34.0,www.middlebury.edu,44.007273600000005,-73.1633011,Vermont
+37,Carnegie Mellon University,Pittsburgh,PA,Private,6941,13869,31102.0,38163.0,70094,136100.0,22.0,1430.0,1560.0,32.0,35.0,www.cmu.edu,40.4416941,-79.99008609999998,Pennsylvania
+38,"University of California, Los Angeles",Los Angeles,CA,Public,33148,44027,14309.0,20011.0,61915,116100.0,16.0,1220.0,1450.0,29.0,34.0,www.ucla.edu,34.0536909,-118.24276599999999,California
+39,Bates College,Lewiston,ME,Private,1787,1905,25192.0,43238.0,68870,111900.0,22.0,,,,,www.bates.edu,44.100351,-70.2147764,Maine
+40,Wesleyan University,Middletown,CT,Private,3123,3213,29956.0,43276.0,69935,117000.0,16.0,,,,,www.wesleyan.edu,41.562317799999995,-72.6509061,Connecticut
+41,Boston College,Chestnut Hill,MA,Private,10304,14628,34550.0,40716.0,70588,115400.0,32.0,1320.0,1490.0,31.0,33.0,www.bc.edu,42.3306529,-71.1661647,Massachusetts
+42,Washington and Lee University,Lexington,VA,Private,1855,2220,24761.0,39671.0,65950,123200.0,22.0,1350.0,1490.0,31.0,33.0,www.wlu.edu,37.7802145,-79.44385150000001,Virginia
+43,United States Air Force Academy,Colorado Springs,CO,Public,4237,4276,0.0,,0,138100.0,12.0,1210.0,1390.0,28.0,32.0,www.usafa.af.mil,38.8339578,-104.8253485,Colorado
+44,Wellesley College,Wellesley,MA,Private,2508,2688,23188.0,45777.0,69034,106200.0,22.0,1360.0,1530.0,30.0,33.0,www.wellesley.edu,42.2964859,-71.2925571,Massachusetts
+45,"University of North Carolina, Chapel Hill",Chapel Hill,NC,Public,19429,29911,14163.0,17291.0,51152,100800.0,24.0,1270.0,1460.0,28.0,33.0,www.unc.edu,35.9131542,-79.05578,North Carolina
+46,Colgate University,Hamilton,NY,Private,2894,3025,23310.0,45108.0,69860,130600.0,28.0,1310.0,1500.0,31.0,33.0,www.colgate.edu,42.82687979999999,-75.5444159,New York
+47,College of William &amp; Mary,Williamsburg,VA,Public,6822,8740,19720.0,18738.0,59012,108900.0,36.0,1300.0,1480.0,29.0,33.0,www.wm.edu,37.2789211,-76.69448609999999,Virginia
+48,Davidson College,Davidson,NC,Private,1810,1959,21206.0,36359.0,66678,106900.0,20.0,1310.0,1470.0,30.0,33.0,www.davidson.edu,35.4992614,-80.8485218,North Carolina
+49,Haverford College,Haverford,PA,Private,1296,1326,26607.0,45805.0,71614,112300.0,20.0,1390.0,1530.0,31.0,34.0,www.haverford.edu,40.013167200000005,-75.2943516,Pennsylvania
+50,Barnard College,New York,NY,Private,2544,2668,25007.0,44776.0,71282,109800.0,15.0,1310.0,1500.0,30.0,33.0,www.barnard.edu,40.7127281,-74.0060152,New York
+51,Santa Clara University,Santa Clara,CA,Private,5754,8629,33738.0,26671.0,69439,134700.0,54.0,1270.0,1440.0,28.0,32.0,www.scu.edu,37.2333253,-121.68463490000002,California
+52,Carleton College,Northfield,MN,Private,2078,2155,27898.0,38342.0,68835,109900.0,21.0,1360.0,1530.0,31.0,34.0,www.carleton.edu,44.4582041,-93.161159,Minnesota
+53,United States Coast Guard Academy,New London,CT,Public,896,1044,0.0,,0,118100.0,15.0,1180.0,1343.0,26.0,31.0,www.uscga.edu,41.3556187,-72.0997804,Connecticut
+54,Pitzer College,Claremont,CA,Private,1074,1087,28423.0,41257.0,70500,96600.0,16.0,,,,,www.pitzer.edu,34.0966764,-117.71977849999999,California
+55,Emory University,Atlanta,GA,Private,7859,14263,26760.0,38213.0,66950,110800.0,22.0,1350.0,1520.0,30.0,33.0,www.emory.edu,33.7489924,-84.3902644,Georgia
+56,Wake Forest University,Winston-Salem,NC,Private,5068,8116,33382.0,42495.0,69130,114800.0,28.0,,,,,www.wfu.edu,36.0998131,-80.2440518,North Carolina
+57,Lafayette College,Easton,PA,Private,2569,2594,30820.0,39957.0,68640,122500.0,31.0,1260.0,1440.0,28.0,31.0,www.lafayette.edu,40.6916081,-75.2099866,Pennsylvania
+58,Cooper Union,New York,NY,Private,921,946,14564.0,32452.0,65045,126200.0,13.0,1310.0,1530.0,28.0,34.0,www.cooper.edu,40.7127281,-74.0060152,New York
+59,Hamilton College,Clinton,NY,Private,1901,2043,24140.0,43611.0,67670,108100.0,24.0,1360.0,1510.0,31.0,33.0,www.hamilton.edu/index.cfm,43.0484029,-75.37850340000001,New York
+60,Scripps College,Claremont,CA,Private,1083,1092,30974.0,31633.0,71060,98600.0,33.0,1290.0,1460.0,29.0,33.0,www.scrippscollege.edu,34.0966764,-117.71977849999999,California
+61,Vassar College,Poughkeepsie,NY,Private,2353,2572,23687.0,44517.0,70370,100100.0,24.0,1330.0,1500.0,30.0,33.0,www.vassar.edu,41.706553899999996,-73.9283672,New York
+62,Babson College,Babson Park,MA,Private,2354,3329,35540.0,36717.0,68432,133800.0,24.0,1230.0,1410.0,27.0,32.0,www.babson.edu,42.2970161,-71.25505009999999,Massachusetts
+63,"University of Maryland, College Park",College Park,MD,Public,32022,40521,18517.0,8955.0,49698,113400.0,45.0,1280.0,1470.0,29.0,33.0,www.umd.edu,38.980666,-76.9369189,Maryland
+64,"University of Washington, Seattle",Seattle,WA,Public,38781,46166,12899.0,14051.0,51159,112300.0,46.0,1190.0,1420.0,27.0,32.0,www.uw.edu,47.6038321,-122.3300624,Washington
+65,Georgia Institute of Technology,Atlanta,GA,Public,17223,29376,13291.0,12779.0,49366,133400.0,23.0,1090.0,1520.0,30.0,34.0,www.gatech.edu,33.7489924,-84.3902644,Georgia
+66,United States Merchant Marine Academy,Kings Point,NY,Public,912,975,6758.0,3597.0,8646,140700.0,22.0,1210.0,1280.0,26.0,28.0,www.usmma.edu,40.819744799999995,-73.7349567,New York
+67,Lehigh University,Bethlehem,PA,Private,5337,7017,34212.0,36014.0,65925,134100.0,25.0,1270.0,1430.0,29.0,32.0,www4.lehigh.edu/default.aspx,40.6178915,-75.3786521,Pennsylvania
+68,"University of Illinois, Urbana-Champaign",Champaign,IL,Public,35476,48216,18377.0,13595.0,46202,115300.0,62.0,1340.0,1500.0,26.0,32.0,www.illinois.edu,40.116420500000004,-88.2433829,Illinois
+69,"University of Wisconsin, Madison",Madison,WI,Public,33863,42977,19880.0,6733.0,49885,104400.0,54.0,1280.0,1450.0,27.0,31.0,www.wisc.edu,43.074760999999995,-89.3837613,Wisconsin
+70,University of Florida,Gainesville,FL,Public,37851,52669,12345.0,6636.0,43409,102800.0,42.0,1240.0,1400.0,28.0,32.0,www.ufl.edu,29.6519684,-82.3249846,Florida
+71,Kenyon College,Gambier,OH,Private,1677,1795,30504.0,34966.0,69180,103800.0,34.0,1263.0,1460.0,29.0,33.0,www.kenyon.edu/index.xml,40.375643,-82.3970994,Ohio
+72,Villanova University,Villanova,PA,Private,7873,10967,41858.0,30163.0,68231,119500.0,36.0,1250.0,1440.0,30.0,33.0,www.villanova.edu,40.037332299999996,-75.34907690000001,Pennsylvania
+73,Bucknell University,Lewisburg,PA,Private,3678,3740,40976.0,29783.0,70125,122900.0,31.0,1250.0,1420.0,28.0,31.0,www.bucknell.edu,40.964529299999995,-76.8844101,Pennsylvania
+74,Boston University,Boston,MA,Private,22829,33355,37065.0,34156.0,70302,113600.0,25.0,1300.0,1480.0,29.0,32.0,www.bu.edu,42.3602534,-71.0582912,Massachusetts
+75,Colby College,Waterville,ME,Private,1917,2032,20739.0,45463.0,68582,103300.0,16.0,1340.0,1500.0,31.0,33.0,www.colby.edu,44.5520105,-69.63171209999999,Maine
+76,"University of Texas, Austin",Austin,TX,Public,42827,51525,16960.0,10644.0,51786,112800.0,36.0,1220.0,1460.0,26.0,33.0,www.utexas.edu,30.2711286,-97.7436995,Texas
+77,College of the Holy Cross,Worcester,MA,Private,2806,2855,34159.0,36963.0,66220,114600.0,40.0,,,,,www.holycross.edu,42.2761217,-71.8058232,Massachusetts
+78,George Washington University,Washington,DC,Private,12358,27973,31956.0,29429.0,69368,115300.0,41.0,1280.0,1440.0,29.0,32.0,www.gwu.edu,38.8949924,-77.0365581,District of Columbia
+79,"University of California, San Diego",San Diego,CA,Public,29613,35772,14630.0,18231.0,60177,123700.0,34.0,1210.0,1410.0,27.0,33.0,www.ucsd.edu,32.7174202,-117.16277279999998,California
+80,Grinnell College,Grinnell,IA,Private,1712,1765,22844.0,33946.0,66214,96500.0,29.0,1310.0,1510.0,30.0,34.0,www.grinnell.edu,41.7430554,-92.72242059999999,Iowa
+81,Smith College,Northampton,MA,Private,2594,2918,24829.0,39913.0,69563,98200.0,32.0,,,,,www.smith.edu,42.3178989,-72.6311006,Massachusetts
+82,University of Rochester,Rochester,NY,Private,6905,11648,30480.0,30658.0,70108,112700.0,34.0,1300.0,1490.0,29.0,33.0,www.rochester.edu,43.157284999999995,-77.615214,New York
+83,University of Richmond,Richmond,VA,Private,3815,4023,26264.0,38394.0,64890,107500.0,33.0,1270.0,1460.0,29.0,32.0,www.richmond.edu,37.53850870000001,-77.43428,Virginia
+84,"University of California, Santa Barbara",Santa Barbara,CA,Public,22910,25057,15764.0,19558.0,64125,116300.0,33.0,1190.0,1400.0,28.0,33.0,www.ucsb.edu,34.4221319,-119.7026673,California
+85,Oberlin College,Oberlin,OH,Private,2853,3030,31331.0,28876.0,71330,96800.0,34.0,1280.0,1450.0,28.0,33.0,www.oberlin.edu,41.2939386,-82.21737859999999,Ohio
+86,Macalester College,St. Paul,MN,Private,2136,2249,26865.0,33335.0,66280,100400.0,41.0,1300.0,1480.0,29.0,32.0,www.macalester.edu,44.9504037,-93.10150259999999,Minnesota
+87,"University of California, Irvine",Irvine,CA,Public,28947,35242,13376.0,18824.0,61872,116000.0,37.0,1170.0,1350.0,25.0,32.0,www.uci.edu,33.685696899999996,-117.82598190000002,California
+88,"University of California, Davis",Davis,CA,Public,31437,37380,15737.0,18690.0,63743,112600.0,43.0,1130.0,1360.0,25.0,32.0,www.ucdavis.edu,38.545379,-121.74458349999999,California
+89,Whitman College,Walla Walla,WA,Private,1510,1574,43488.0,23828.0,64504,102600.0,52.0,1140.0,1380.0,28.0,32.0,www.whitman.edu,46.0667277,-118.3393456,Washington
+90,University of Miami (FL),Coral Gables,FL,Private,12002,17003,29184.0,20647.0,66274,99600.0,36.0,1230.0,1420.0,28.0,32.0,www.miami.edu,25.72149,-80.2683838,Florida
+91,Southern Methodist University,Dallas,TX,Private,6917,11789,32190.0,33203.0,72408,110400.0,49.0,1270.0,1440.0,28.0,32.0,www.smu.edu,32.7762719,-96.7968559,Texas
+92,Colorado College,Colorado Springs,CO,Private,2118,2450,34032.0,36872.0,68616,97900.0,15.0,,,,,www.coloradocollege.edu,38.8339578,-104.8253485,Colorado
+93,Worcester Polytechnic Institute,Worcester,MA,Private,4654,6642,40376.0,19515.0,65046,135500.0,48.0,,,,,www.wpi.edu,42.2761217,-71.8058232,Massachusetts
+94,Colorado School of Mines,Golden,CO,Public,4811,6209,25710.0,10725.0,52698,139600.0,56.0,1310.0,1450.0,28.0,32.0,www.mines.edu,39.755542999999996,-105.2210997,Colorado
+95,Brigham Young University,Provo,UT,Private,34334,35807,12974.0,4843.0,18370,108000.0,52.0,1210.0,1410.0,27.0,32.0,www.byu.edu,40.233843799999995,-111.6585337,Utah
+96,Brandeis University,Waltham,MA,Private,3869,5721,31138.0,35487.0,70943,113200.0,34.0,1280.0,1470.0,29.0,33.0,www.brandeis.edu,42.3756401,-71.2358004,Massachusetts
+97,Yeshiva University,New York,NY,Private,2884,6330,36306.0,26972.0,60525,112800.0,63.0,1160.0,1420.0,23.0,29.0,www.yu.edu,40.7127281,-74.0060152,New York
+98,"University of Minnesota, Twin Cities",Minneapolis,MN,Public,45796,51848,17396.0,8760.0,39655,104000.0,50.0,1270.0,1480.0,26.0,31.0,www.umn.edu,44.9772995,-93.2654692,Minnesota
+99,University of Georgia,Athens,GA,Public,30690,37606,14625.0,10076.0,44978,100700.0,54.0,1200.0,1370.0,26.0,31.0,www.uga.edu,33.9597677,-83.376398,Georgia
+100,Case Western Reserve University,Cleveland,OH,Private,5292,11824,35316.0,28295.0,65384,117800.0,33.0,1340.0,1520.0,30.0,33.0,www.case.edu,41.5051613,-81.6934446,Ohio
+101,Skidmore College,Saratoga Springs,NY,Private,2684,2835,27410.0,41746.0,69450,99700.0,25.0,1205.0,1400.0,27.0,31.0,www.skidmore.edu,43.08217929999999,-73.7853915,New York
+102,Occidental College,Los Angeles,CA,Private,1972,2123,29211.0,35704.0,71756,105700.0,42.0,1280.0,1440.0,27.0,32.0,www.oxy.edu,34.0536909,-118.24276599999999,California
+103,"Texas A&amp;M University, College Station",College Station,TX,Public,53515,67929,20282.0,8748.0,53848,115700.0,71.0,1140.0,1360.0,25.0,30.0,www.tamu.edu,30.595528899999998,-96.3071042,Texas
+104,Union College (NY),Schenectady,NY,Private,2214,2267,32720.0,29135.0,68610,117500.0,37.0,,,,,www.union.edu,42.8142432,-73.93956870000001,New York
+105,Reed College,Portland,OR,Private,1470,1490,31815.0,35130.0,69820,104900.0,36.0,1310.0,1500.0,30.0,33.0,www.reed.edu,45.5202471,-122.6741949,Oregon
+106,Tulane University,New Orleans,LA,Private,8873,12384,34240.0,33035.0,69764,105300.0,21.0,1330.0,1490.0,30.0,33.0,www.tulane.edu,29.949932300000004,-90.0701156,Louisiana
+107,Bentley University,Waltham,MA,Private,4352,5543,35671.0,26565.0,66180,116600.0,44.0,1210.0,1380.0,27.0,31.0,www.bentley.edu,42.3756401,-71.2358004,Massachusetts
+108,Virginia Tech,Blacksburg,VA,Public,26634,34440,20343.0,8261.0,44024,114000.0,70.0,1180.0,1360.0,25.0,30.0,www.vt.edu,37.2296566,-80.4136767,Virginia
+109,Trinity College (CT),Hartford,CT,Private,2282,2401,31808.0,40346.0,71470,110900.0,34.0,1260.0,1420.0,28.0,32.0,www.trincoll.edu/Pages/default.aspx,41.764582,-72.6908547,Connecticut
+110,Rose-Hulman Institute of Technology,Terre Haute,IN,Private,2245,2254,36906.0,20967.0,65031,135800.0,61.0,1260.0,1450.0,27.0,32.0,www.rose-hulman.edu,39.466702500000004,-87.4139119,Indiana
+111,Bryn Mawr College,Bryn Mawr,PA,Private,1442,1640,25672.0,37710.0,68410,95300.0,38.0,1310.0,1500.0,29.0,33.0,www.brynmawr.edu,40.019833500000004,-75.30462990000001,Pennsylvania
+112,Rhode Island School of Design,Providence,RI,Private,2030,2440,46277.0,26169.0,67620,100600.0,32.0,1130.0,1370.0,25.0,31.0,www.risd.edu,41.8239891,-71.4128343,Rhode Island
+113,Rensselaer Polytechnic Institute,Troy,NY,Private,6371,7592,34839.0,30596.0,70132,134100.0,43.0,1320.0,1500.0,28.0,32.0,www.rpi.edu,40.740255700000006,-74.0055355,New York
+114,Franklin and Marshall College,Lancaster,PA,Private,2283,2440,27531.0,43377.0,70430,109700.0,34.0,,,,,www.fandm.edu,40.038129999999995,-76.3056686,Pennsylvania
+115,"California Polytechnic State University, San Luis Obispo",San Luis Obispo,CA,Public,21098,22370,19979.0,5891.0,39033,119500.0,35.0,1200.0,1380.0,26.0,31.0,calpoly.edu,35.354020899999995,-120.3757163,California
+116,St. Olaf College,Northfield,MN,Private,3035,3137,24250.0,28573.0,58330,101900.0,43.0,1150.0,1400.0,25.0,31.0,wp.stolaf.edu,44.4582041,-93.161159,Minnesota
+117,Pennsylvania State University,State College,PA,Public,43709,47119,30373.0,10060.0,51572,105500.0,50.0,1160.0,1340.0,25.0,30.0,www.psu.edu,40.794450399999995,-77.86163859999999,Pennsylvania
+118,Purdue University,West Lafayette,IN,Public,32534,42699,13746.0,10703.0,41614,110000.0,57.0,1150.0,1380.0,25.0,31.0,www.purdue.edu,40.4258686,-86.9080655,Indiana
+119,The Juilliard School,New York,NY,Private,590,927,32829.0,29417.0,62600,97400.0,6.0,,,,,,40.7127281,-74.0060152,New York
+120,Dickinson College,Carlisle,PA,Private,2382,2422,28464.0,34171.0,69071,100100.0,49.0,,,,,www.dickinson.edu,40.201499,-77.18907829999999,Pennsylvania
+121,Ohio State University,Columbus,OH,Public,49185,59837,17726.0,9730.0,46141,98600.0,48.0,1260.0,1450.0,27.0,31.0,www.osu.edu,39.9622601,-83.00070649999999,Ohio
+122,Wheaton College (IL),Wheaton,IL,Private,2544,2900,28005.0,16173.0,47696,99700.0,85.0,1230.0,1410.0,27.0,32.0,www.wheaton.edu,41.864695899999994,-88.1101709,Illinois
+123,Rutgers University,New Brunswick,NJ,Public,40523,49577,20379.0,13896.0,47518,111000.0,58.0,1190.0,1400.0,,,www.rutgers.edu,40.4862174,-74.4518173,New Jersey
+124,Loyola Marymount University,Los Angeles,CA,Private,6591,9618,40676.0,19787.0,64735,113300.0,52.0,1180.0,1360.0,26.0,31.0,www.lmu.edu,34.0536909,-118.24276599999999,California
+125,University of Portland,Portland,OR,Private,3967,4396,35329.0,23282.0,59236,104900.0,70.0,1140.0,1320.0,23.0,29.0,www.up.edu,45.5202471,-122.6741949,Oregon
+126,American University,Washington,DC,Private,8606,13858,36567.0,29412.0,64234,102900.0,29.0,1180.0,1350.0,26.0,30.0,www.american.edu,38.8949924,-77.0365581,District of Columbia
+127,Furman University,Greenville,SC,Private,2863,2949,27508.0,30434.0,63706,98800.0,61.0,1190.0,1380.0,26.0,31.0,www2.furman.edu/Pages/default.aspx,34.851354,-82.3984882,South Carolina
+128,Connecticut College,New London,CT,Private,1817,1928,30244.0,39603.0,69440,100800.0,38.0,,,,,www.conncoll.edu,41.3556187,-72.0997804,Connecticut
+129,Pepperdine University,Malibu,CA,Private,3803,7710,33814.0,31980.0,70862,103900.0,40.0,1200.0,1390.0,26.0,31.0,www.pepperdine.edu,34.035591,-118.689423,California
+130,University of Connecticut,Storrs,CT,Public,20662,27578,20681.0,13630.0,53112,105200.0,48.0,1210.0,1390.0,26.0,31.0,www.uconn.edu,41.8084314,-72.24952309999999,Connecticut
+131,"Indiana University, Bloomington",Bloomington,IN,Public,41317,43710,14351.0,11647.0,48739,97100.0,76.0,1140.0,1350.0,25.0,31.0,www.indiana.edu,39.1670396,-86.5342881,Indiana
+132,DePauw University,Greencastle,IN,Private,2158,2253,22323.0,31570.0,62567,101000.0,67.0,1110.0,1330.0,24.0,29.0,www.depauw.edu,39.644489799999995,-86.8647316,Indiana
+133,Elon University,Elon,NC,Private,6214,6791,34459.0,14061.0,49642,93700.0,67.0,1140.0,1330.0,25.0,29.0,www.elon.edu,36.1029132,-79.50668950000001,North Carolina
+134,Clemson University,Clemson,SC,Public,19506,24387,17696.0,10296.0,50516,106700.0,47.0,1220.0,1390.0,27.0,31.0,www.clemson.edu,34.685074900000004,-82.83641109999999,South Carolina
+135,Fairfield University,Fairfield,CT,Private,4511,5192,36929.0,24180.0,64325,116900.0,61.0,,,,,www.fairfield.edu,41.1412078,-73.26372579999999,Connecticut
+136,James Madison University,Harrisonburg,VA,Public,21167,21836,20204.0,8556.0,42522,102600.0,75.0,1100.0,1260.0,23.0,28.0,www.jmu.edu,38.4493315,-78.8688833,Virginia
+137,Mount Holyoke College,South Hadley,MA,Private,2334,2393,26239.0,31370.0,63900,92100.0,51.0,1270.0,1463.0,29.0,33.0,www.mtholyoke.edu,42.2495463,-72.582258,Massachusetts
+138,Gettysburg College,Gettysburg,PA,Private,2411,2615,27597.0,29795.0,66710,109300.0,46.0,,,,,www.gettysburg.edu,39.8308973,-77.23101199999999,Pennsylvania
+139,"North Carolina State University, Raleigh",Raleigh,NC,Public,26961,34432,15024.0,10998.0,42048,106500.0,51.0,1230.0,1390.0,26.0,31.0,www.ncsu.edu,35.7803977,-78.63909890000001,North Carolina
+140,University of Denver,Denver,CO,Private,6080,11434,32174.0,26702.0,65376,105100.0,58.0,1160.0,1350.0,25.0,30.0,www.du.edu,39.7392364,-104.98486229999999,Colorado
+141,Fordham University,Bronx,NY,Private,10137,16037,35694.0,27530.0,72239,112500.0,46.0,1230.0,1410.0,27.0,31.0,www.fordham.edu,40.8466508,-73.87859370000001,New York
+142,University of San Diego,San Diego,CA,Private,6177,8905,34752.0,24364.0,65426,109400.0,50.0,1180.0,1350.0,26.0,30.0,www.sandiego.edu,32.7174202,-117.16277279999998,California
+143,Trinity University (TX),San Antonio,TX,Private,2406,2571,23144.0,26174.0,56880,102900.0,38.0,1230.0,1410.0,27.0,32.0,web.trinity.edu,29.424600199999997,-98.4951405,Texas
+144,University of Pittsburgh,Pittsburgh,PA,Public,20822,28642,28331.0,12484.0,44812,100400.0,60.0,1240.0,1418.0,27.0,32.0,www.pitt.edu,40.4416941,-79.99008609999998,Pennsylvania
+145,"Binghamton University, SUNY",Binghamton,NY,Public,14736,17351,18378.0,8062.0,40980,109600.0,40.0,1290.0,1431.0,28.0,31.0,www.binghamton.edu,42.096968,-75.91434100000001,New York
+146,"University of Colorado, Boulder",Boulder,CO,Public,30976,35338,20706.0,9787.0,54312,109900.0,80.0,1150.0,1340.0,25.0,30.0,www.colorado.edu,40.0149856,-105.2705456,Colorado
+147,University of Delaware,Newark,DE,Public,20550,23774,16892.0,8798.0,47782,105400.0,63.0,1130.0,1330.0,25.0,29.0,www.udel.edu,39.6852191,-75.75082890000002,Delaware
+148,Texas Christian University,Fort Worth,TX,Private,9258,10489,35429.0,24864.0,62970,98700.0,41.0,1130.0,1330.0,25.0,30.0,www.tcu.edu,32.753177,-97.3327459,Texas
+149,College of New Jersey,Ewing,NJ,Public,7212,7552,26670.0,9936.0,45897,101800.0,48.0,1170.0,1330.0,,,www.tcnj.edu,40.2688105,-74.8006895,New Jersey
+150,Rhodes College,Memphis,TN,Private,2010,2102,25629.0,30234.0,61538,97800.0,51.0,1220.0,1410.0,27.0,32.0,www.rhodes.edu,35.1490215,-90.0516285,Tennessee
+151,Florida State University,Tallahassee,FL,Public,36787,41362,14582.0,6628.0,34904,92700.0,49.0,1190.0,1330.0,26.0,30.0,www.fsu.edu,30.4380832,-84.2809332,Florida
+152,Stevens Institute of Technology,Hoboken,NJ,Private,3144,6916,36620.0,25762.0,67204,139900.0,44.0,1320.0,1470.0,29.0,33.0,www.stevens.edu/sit,40.7433066,-74.0323752,New Jersey
+153,Denison University,Granville,OH,Private,2290,2341,24808.0,30783.0,64970,104800.0,37.0,1200.0,1380.0,28.0,31.0,www.denison.edu,40.068119200000005,-82.5196037,Ohio
+154,Sewanee—University of the South,Sewanee,TN,Private,1778,1835,27544.0,23449.0,60950,97800.0,47.0,,,,,www.sewanee.edu,35.203137299999995,-85.92108990000001,Tennessee
+155,"University of Massachusetts, Amherst",Amherst,MA,Public,26735,30340,20926.0,8867.0,48135,103000.0,58.0,1180.0,1360.0,26.0,31.0,www.umass.edu,42.3685658,-72.505714,Massachusetts
+156,Syracuse University,Syracuse,NY,Private,22484,28199,34173.0,27878.0,65480,104800.0,47.0,1160.0,1350.0,25.0,30.0,www.syracuse.edu,43.0481221,-76.1474244,New York
+157,Sarah Lawrence College,Bronxville,NY,Private,1470,1696,33358.0,28916.0,70266,96100.0,53.0,1240.0,1410.0,27.0,31.0,www.slc.edu,40.9381544,-73.83207840000001,New York
+158,St. Lawrence University,Canton,NY,Private,2468,2493,27691.0,31866.0,68296,104000.0,48.0,1205.0,1365.0,26.0,30.0,www.stlawu.edu,44.595616299999996,-75.1690942,New York
+159,Michigan State University,East Lansing,MI,Public,42252,50019,18576.0,10911.0,53424,100800.0,72.0,1100.0,1320.0,23.0,28.0,www.msu.edu,42.735541600000005,-84.4852469,Michigan
+160,University of Iowa,Iowa City,IA,Public,27051,32166,15103.0,8045.0,44251,99400.0,86.0,1140.0,1370.0,23.0,28.0,www.uiowa.edu,41.661256099999996,-91.5299106,Iowa
+161,Saint Louis University,St. Louis,MO,Private,14373,14581,27341.0,23580.0,57214,95300.0,64.0,1170.0,1390.0,25.0,31.0,www.slu.edu,38.6264178,-90.1998378,Missouri
+162,Seattle University,Seattle,WA,Private,5250,7278,35021.0,22438.0,59607,113700.0,74.0,1130.0,1330.0,24.0,29.0,www.seattleu.edu/default.aspx,47.6038321,-122.3300624,Washington
+163,Manhattan School of Music,New York,NY,Private,451,1007,47116.0,24906.0,66200,,43.0,,,,,,40.7127281,-74.0060152,New York
+164,Kalamazoo College,Kalamazoo,MI,Private,1436,1469,23579.0,29059.0,59267,94500.0,73.0,1180.0,1380.0,26.0,30.0,www.kzoo.edu,42.291707,-85.5872286,Michigan
+165,University of Dayton,Dayton,OH,Private,8660,10882,32721.0,21293.0,57680,105000.0,72.0,1100.0,1310.0,24.0,29.0,www.udayton.edu,39.758947799999994,-84.1916069,Ohio
+166,Auburn University,Auburn,AL,Public,23846,29776,23416.0,9030.0,49954,104500.0,84.0,1130.0,1310.0,24.0,30.0,www.auburn.edu,32.713387,-85.465079,Alabama
+167,Saint Joseph's University (PA),Philadelphia,PA,Private,5705,8085,33480.0,23892.0,60854,105100.0,77.0,1110.0,1290.0,23.0,28.0,www.sju.edu,39.9527237,-75.16352619999999,Pennsylvania
+168,University of Vermont,Burlington,VT,Public,12945,13340,18877.0,16347.0,56890,99400.0,67.0,1180.0,1350.0,25.0,30.0,www.uvm.edu,44.4761601,-73.212906,Vermont
+169,Samford University,Birmingham,AL,Private,3446,5509,29032.0,14879.0,46474,90500.0,83.0,1080.0,1280.0,23.0,29.0,www.samford.edu,33.5206824,-86.80243259999999,Alabama
+170,Gonzaga University,Spokane,WA,Private,5333,7506,32623.0,21169.0,57350,107600.0,65.0,1180.0,1350.0,26.0,30.0,www.gonzaga.edu,47.657193400000004,-117.42351059999999,Washington
+171,Wofford College,Spartanburg,SC,Private,1678,1737,24722.0,28158.0,57749,96600.0,69.0,1120.0,1310.0,29.0,30.0,www.wofford.edu,34.949800700000004,-81.9320157,South Carolina
+172,Providence College,Providence,RI,Private,4484,4646,38823.0,26359.0,64984,106900.0,52.0,1160.0,1330.0,26.0,30.0,www.providence.edu/Pages/default.aspx,41.8239891,-71.4128343,Rhode Island
+173,University of Puget Sound,Tacoma,WA,Private,2545,2701,37074.0,21534.0,63510,101300.0,84.0,,,,,www.pugetsound.edu,47.24957979999999,-122.43987460000001,Washington
+174,"CUNY, Baruch College",New York,NY,Public,18289,18775,2695.0,8944.0,39172,107100.0,29.0,1190.0,1350.0,,,www.baruch.cuny.edu,40.7127281,-74.0060152,New York
+175,Loyola University Maryland,Baltimore,MD,Private,4175,5783,36350.0,26091.0,64520,111200.0,75.0,,,,,www.loyola.edu,39.2908816,-76.610759,Maryland
+176,"SUNY, Stony Brook (Stony Brook University)",Stony Brook,NY,Public,19871,25989,13770.0,9968.0,42981,107800.0,42.0,1210.0,1410.0,26.0,31.0,www.stonybrook.edu,40.9087015,-73.1396036,New York
+177,George Mason University,Fairfax,VA,Public,32249,35984,19779.0,8567.0,51672,105700.0,81.0,1100.0,1290.0,24.0,30.0,www.gmu.edu,38.8462236,-77.3063733,Virginia
+178,Chapman University,Orange,CA,Private,6756,9392,39228.0,26378.0,69464,99400.0,57.0,1190.0,1360.0,25.0,30.0,www.chapman.edu,33.750037799999994,-117.87049309999999,California
+179,Muhlenberg College,Allentown,PA,Private,2367,2535,31014.0,25282.0,65330,101900.0,48.0,1140.0,1340.0,25.0,30.0,www.muhlenberg.edu,40.6022059,-75.47127940000001,Pennsylvania
+180,Marquette University,Milwaukee,WI,Private,8486,11426,29120.0,20717.0,55273,105900.0,89.0,1130.0,1310.0,24.0,29.0,www.marquette.edu,43.0349931,-87.92249699999999,Wisconsin
+181,San Diego State University,San Diego,CA,Public,31609,35158,14030.0,7549.0,40104,102800.0,35.0,1090.0,1290.0,23.0,28.0,www.sdsu.edu,32.7174202,-117.16277279999998,California
+182,Northeastern University,Boston,MA,Private,18760,21489,29748.0,34691.0,68177,109700.0,27.0,1370.0,1520.0,32.0,34.0,www.northeastern.edu,42.3602534,-71.0582912,Massachusetts
+183,"University of California, Santa Cruz",Santa Cruz,CA,Public,17925,19457,17877.0,18050.0,64054,104700.0,51.0,1160.0,1340.0,26.0,31.0,www.ucsc.edu,37.050096,-121.9905908,California
+184,Lewis &amp; Clark College,Portland,OR,Private,2174,3339,34838.0,25539.0,62086,93200.0,71.0,1210.0,1390.0,27.0,31.0,www.lclark.edu,45.5202471,-122.6741949,Oregon
+185,Miami University (OH),Oxford,OH,Public,18239,19700,21288.0,11894.0,51064,107300.0,68.0,1190.0,1380.0,26.0,31.0,miamioh.edu,39.51030479999999,-84.7420519,Ohio
+186,"Arizona State University, Tempe",Tempe,AZ,Public,46038,51164,11163.0,12081.0,44110,100900.0,84.0,1120.0,1350.0,22.0,29.0,www.asu.edu,33.4255056,-111.9400125,Arizona
+187,University of Utah,Salt Lake City,UT,Public,28686,32800,13728.0,7990.0,42916,102600.0,66.0,1110.0,1350.0,22.0,29.0,www.utah.edu,40.759619799999996,-111.88679750000001,Utah
+188,"University of Oklahoma, Norman",Norman,OK,Public,24255,28527,19254.0,9372.0,43764,100600.0,74.0,1150.0,1380.0,23.0,29.0,www.ou.edu,35.2225717,-97.4394816,Oklahoma
+189,Marist College,Poughkeepsie,NY,Private,6236,6657,35290.0,15637.0,54880,101000.0,43.0,,,,,www.marist.edu,41.706553899999996,-73.9283672,New York
+190,Hobart and William Smith Colleges,Geneva,NY,Private,2244,2295,35172.0,25110.0,69775,108500.0,64.0,1150.0,1330.0,25.0,30.0,www.hws.edu,42.869027100000004,-76.9786122,New York
+191,University of Oregon,Eugene,OR,Public,22400,22887,15693.0,8662.0,49542,95800.0,83.0,1080.0,1270.0,22.0,28.0,www.uoregon.edu,44.0505054,-123.09505060000001,Oregon
+192,Drake University,Des Moines,IA,Private,3606,4904,27578.0,21239.0,54020,99900.0,69.0,1100.0,1350.0,24.0,30.0,www.drake.edu,41.591032299999995,-93.6046655,Iowa
+193,Lawrence University,Appleton,WI,Private,1467,1545,25117.0,28643.0,58458,98800.0,61.0,1220.0,1460.0,25.0,32.0,www.lawrence.edu,44.26113370000001,-88.40676040000001,Wisconsin
+194,Creighton University,Omaha,NE,Private,4626,8654,30427.0,20293.0,53452,95800.0,72.0,1070.0,1290.0,25.0,30.0,www.creighton.edu,41.258745899999994,-95.93837579999999,Nebraska
+195,Hillsdale College,Hillsdale,MI,Private,1520,1556,,18540.0,40552,,41.0,1280.0,1440.0,28.0,32.0,www.hillsdale.edu,41.8779105,-84.59843959999999,Michigan
+196,University at Buffalo (SUNY),Buffalo,NY,Public,23075,30648,17469.0,8198.0,43398,98000.0,57.0,1080.0,1260.0,24.0,28.0,www.buffalo.edu,42.8867166,-78.87839220000001,New York
+197,University of Tulsa,Tulsa,OK,Private,3630,4433,23948.0,31812.0,59435,107200.0,39.0,1150.0,1440.0,25.0,32.0,www.utulsa.edu,36.1556805,-95.9929113,Oklahoma
+198,University of Saint Thomas (MN),St. Paul,MN,Private,6424,9878,30503.0,21274.0,54647,106400.0,84.0,1090.0,1330.0,24.0,29.0,www.stthomas.edu,44.9504037,-93.10150259999999,Minnesota
+199,"University of California, Riverside",Riverside,CA,Public,21017,23279,12344.0,21249.0,62677,106900.0,57.0,1090.0,1300.0,23.0,29.0,www.ucr.edu,33.953354600000004,-117.39616229999999,California
+200,Manhattan College,Riverdale,NY,Private,3727,4242,30243.0,18177.0,60212,125700.0,75.0,1050.0,1243.0,23.0,28.0,www.manhattan.edu,40.90056,-73.90639,New York
+201,University of South Carolina,Columbia,SC,Public,26791,34731,19519.0,5792.0,47162,89900.0,72.0,1170.0,1330.0,25.0,30.0,www.sc.edu,34.000749299999995,-81.03433129999999,South Carolina
+202,Baylor University,Waco,TX,Private,14951,17059,34898.0,21350.0,60233,101400.0,39.0,1190.0,1360.0,26.0,31.0,www.baylor.edu,31.549333,-97.1466695,Texas
+203,Bryant University,Smithfield,RI,Private,3503,3751,37730.0,20675.0,59904,108600.0,73.0,,,,,www.bryant.edu,41.9220433,-71.54950699999999,Rhode Island
+204,University of Mary Washington,Fredericksburg,VA,Public,4800,4808,21227.0,5562.0,42716,98200.0,73.0,1080.0,1260.0,22.0,27.0,www.umw.edu,38.303183700000005,-77.46053990000001,Virginia
+205,Virginia Military Institute,Lexington,VA,Public,1722,1766,19905.0,14434.0,56288,120600.0,53.0,1100.0,1280.0,23.0,28.0,www.vmi.edu,37.7802145,-79.44385150000001,Virginia
+206,Clark University (MA),Worcester,MA,Private,2476,3153,27004.0,24329.0,55010,101400.0,56.0,,,,,www.clarku.edu,42.2761217,-71.8058232,Massachusetts
+207,Clarkson University,Potsdam,NY,Private,3335,4233,30563.0,32540.0,66106,130100.0,66.0,1143.0,1330.0,24.0,29.0,www.clarkson.edu,44.669799600000005,-74.98133490000001,New York
+208,Illinois Institute of Technology,Chicago,IL,Private,3227,7164,22098.0,34485.0,63749,118500.0,54.0,1230.0,1410.0,25.0,31.0,www.iit.edu,41.875561600000005,-87.6244212,Illinois
+209,Centre College,Danville,KY,Private,1443,1450,23237.0,26184.0,53910,88500.0,76.0,1170.0,1410.0,26.0,31.0,www.centre.edu,37.6456488,-84.7721823,Kentucky
+210,University of San Francisco,San Francisco,CA,Private,7495,11063,32210.0,27943.0,65980,109900.0,66.0,1100.0,1290.0,22.0,28.0,www.usfca.edu,37.779026200000004,-122.4199061,California
+211,Iowa State University,Ames,IA,Public,32814,36158,14331.0,7882.0,34442,101300.0,89.0,1160.0,1410.0,22.0,28.0,www.iastate.edu,42.026770299999995,-93.6170554,Iowa
+212,Louisiana State University,Baton Rouge,LA,Public,27658,30861,18181.0,9304.0,46381,102900.0,74.0,1060.0,1290.0,23.0,28.0,www.lsu.edu,30.445959600000002,-91.18738,Louisiana
+213,Willamette University,Salem,OR,Private,2181,2498,28327.0,27489.0,62262,97700.0,89.0,,,,,www.willamette.edu,44.9391565,-123.033121,Oregon
+214,Gustavus Adolphus College,St. Peter,MN,Private,2181,2263,20050.0,24333.0,55800,96800.0,68.0,,,,,www.gustavus.edu,44.3238384,-93.9585295,Minnesota
+215,Quinnipiac University,Hamden,CT,Private,7704,10200,38695.0,22460.0,63770,97700.0,74.0,1080.0,1260.0,23.0,27.0,www.quinnipiac.edu,41.3959287,-72.89687159999998,Connecticut
+216,Butler University,Indianapolis,IN,Private,4311,5145,36413.0,16348.0,56740,99300.0,65.0,1150.0,1320.0,25.0,30.0,www.butler.edu,39.779801,-86.1394092,Indiana
+217,"SUNY, College of Environmental Science and Forestry",Syracuse,NY,Public,1825,2213,17923.0,7628.0,36953,97000.0,52.0,1150.0,1300.0,24.0,28.0,www.esf.edu,43.0481221,-76.1474244,New York
+218,University of Arizona,Tucson,AZ,Public,36862,43751,14744.0,11272.0,51707,101000.0,84.0,,,,,www.arizona.edu,32.2228765,-110.9748477,Arizona
+219,"University of Missouri, Columbia",Columbia,MO,Public,27923,30844,18602.0,9316.0,43330,98600.0,78.0,1120.0,1350.0,23.0,29.0,www.missouri.edu,38.951883,-92.3337366,Missouri
+220,The Citadel,Charleston,SC,Public,3043,3717,17935.0,11281.0,50506,108100.0,81.0,1020.0,1220.0,20.0,25.0,www.citadel.edu/root,32.7876012,-79.9402728,South Carolina
+221,University of Washington Bothell,Bothell,WA,Public,5981,6175,9822.0,12946.0,51348,108000.0,80.0,1030.0,1230.0,19.0,26.0,www.uwb.edu,47.7598697,-122.2068288,Washington
+222,Emerson College,Boston,MA,Private,4088,4459,43965.0,20323.0,65324,94300.0,46.0,1200.0,1360.0,26.0,30.0,www.emerson.edu,42.3602534,-71.0582912,Massachusetts
+223,"Colorado State University, Fort Collins",Fort Collins,CO,Public,28404,33083,17058.0,8221.0,43437,96100.0,83.0,1100.0,1300.0,22.0,28.0,www.colostate.edu,40.5508527,-105.0668085,Colorado
+224,"University of Tennessee, Knoxville",Knoxville,TN,Public,23803,28321,19335.0,8903.0,49350,95100.0,77.0,1140.0,1310.0,24.0,30.0,www.utk.edu,35.960394799999996,-83.92102609999999,Tennessee
+225,Taylor University,Upland,IN,Private,2145,2831,24525.0,17726.0,45330,90600.0,87.0,1045.0,1290.0,22.0,29.0,www.taylor.edu,40.4755974,-85.4944168,Indiana
+226,Drexel University,Philadelphia ,PA,Private,17789,24190,37427.0,28767.0,68792,114800.0,79.0,1160.0,1360.0,24.0,30.0,www.drexel.edu,39.9527237,-75.16352619999999,Pennsylvania
+227,Stonehill College,Easton,MA,Private,2498,2536,32911.0,22865.0,59560,103200.0,72.0,,,,,www.stonehill.edu,42.0245442,-71.1286594,Massachusetts
+228,University of South Florida,Tampa,FL,Public,37076,43540,11700.0,7937.0,32324,91300.0,45.0,1150.0,1310.0,24.0,29.0,www.usf.edu,27.947759499999997,-82.458444,Florida
+229,St. Mary's College of Maryland,St. Mary's City,MD,Public,1598,1746,21025.0,8414.0,45130,95400.0,82.0,1070.0,1290.0,22.0,28.0,www.smcm.edu,38.186492,-76.43012,Maryland
+230,Bard College,Annandale-on-Hudson,NY,Private,2101,2293,26766.0,39096.0,70562,90600.0,58.0,,,,,www.bard.edu,42.0128695,-73.9081901,New York
+231,Washington State University,Pullman,WA,Public,27917,30614,16314.0,8572.0,41675,103700.0,73.0,1020.0,1220.0,20.0,26.0,www.wsu.edu,46.7304268,-117.173895,Washington
+232,Truman State University,Kirksville,MO,Public,6272,6289,12537.0,8778.0,27878,85800.0,67.0,1185.0,1420.0,24.0,30.0,www.truman.edu,40.1948848,-92.5833939,Missouri
+233,Illinois Wesleyan University,Bloomington,IL,Private,1649,1791,26976.0,26421.0,58830,96000.0,61.0,1195.0,1395.0,24.0,29.0,www.iwu.edu,40.473107299999995,-88.9941403,Illinois
+234,"St. John's College, Annapolis",Annapolis,MD,Private,445,513,26808.0,33723.0,65409,,54.0,1280.0,1450.0,26.0,32.0,www.stjohnscollege.edu,38.9786401,-76.492786,Maryland
+235,"SUNY, Geneseo",Geneseo,NY,Public,5652,5792,18879.0,6708.0,34740,93300.0,72.0,1120.0,1300.0,24.0,29.0,www.geneseo.edu,42.8045378,-77.7714572,New York
+236,Westmont College,Santa Barbara,CA,Private,1300,1356,31039.0,26711.0,60930,102400.0,85.0,1130.0,1380.0,23.0,30.0,www.westmont.edu,34.4221319,-119.7026673,California
+237,Cedarville University,Cedarville,OH,Private,3666,3886,21490.0,14155.0,39194,87300.0,71.0,1130.0,1350.0,23.0,29.0,www.cedarville.edu,39.7442268,-83.8085372,Ohio
+238,University of the Pacific (CA),Stockton,CA,Private,3639,6255,29171.0,26884.0,64796,109300.0,65.0,1070.0,1330.0,22.0,30.0,www.pacific.edu,37.9577016,-121.29077959999998,California
+239,"University of Nebraska, Lincoln",Lincoln,NE,Public,22012,26079,17784.0,8538.0,40182,96700.0,64.0,1100.0,1380.0,22.0,29.0,www.unl.edu,40.8088861,-96.70777509999999,Nebraska
+240,"University of Texas, Dallas",Richardson,TX,Public,18764,27642,14763.0,14321.0,45488,100900.0,76.0,1220.0,1430.0,26.0,32.0,www.utdallas.edu,32.9481789,-96.7297206,Texas
+241,Rollins College,Winter Park,FL,Private,2894,3278,30194.0,30057.0,67775,87000.0,64.0,,,,,www.rollins.edu,28.597770699999998,-81.35102640000001,Florida
+242,University of Central Florida,Orlando,FL,Public,65100,66059,15286.0,5757.0,38353,88600.0,50.0,1150.0,1320.0,24.0,29.0,www.ucf.edu,28.5421109,-81.3790304,Florida
+243,Ithaca College,Ithaca,NY,Private,6488,6516,33848.0,25073.0,61339,98600.0,71.0,,,,,www.ithaca.edu,42.4396039,-76.49680190000001,New York
+244,DePaul University,Chicago,IL,Private,17838,22769,30502.0,20387.0,56275,102900.0,72.0,,,,,www.depaul.edu/Pages/default.aspx,41.875561600000005,-87.6244212,Illinois
+245,Missouri University of Science and Technology,Rolla,MO,Public,7192,8883,14473.0,8975.0,38684,122600.0,84.0,1100.0,1340.0,25.0,31.0,www.mst.edu,37.9509324,-91.77080759999998,Missouri
+246,University of New Hampshire,Durham,NH,Public,13688,15363,24529.0,12539.0,47570,100300.0,77.0,1070.0,1260.0,23.0,28.0,www.unh.edu,43.134564000000005,-70.927048,New Hampshire
+247,Hope College,Holland,MI,Private,3150,3281,26175.0,15907.0,45410,90900.0,74.0,1090.0,1320.0,24.0,29.0,www.hope.edu,42.7876022,-86.1090828,Michigan
+248,Loyola University Chicago,Chicago,IL,Private,12864,16673,33036.0,22016.0,59958,96000.0,71.0,1120.0,1310.0,24.0,29.0,www.luc.edu,41.875561600000005,-87.6244212,Illinois
+249,Seton Hall University,South Orange,NJ,Private,6260,9801,27563.0,24710.0,57090,103800.0,73.0,1140.0,1280.0,24.0,28.0,www.shu.edu,40.7474966,-74.26353759999999,New Jersey
+250,College of Wooster,Wooster,OH,Private,1980,2122,25442.0,30851.0,61900,91300.0,56.0,1150.0,1380.0,24.0,30.0,wooster.edu,40.798097600000006,-81.9397733,Ohio
+251,University of Scranton,Scranton,PA,Private,3893,5373,35298.0,22094.0,61096,99700.0,75.0,1080.0,1280.0,23.0,28.0,www.scranton.edu,41.4086874,-75.66212940000001,Pennsylvania
+252,University of Alabama,Tuscaloosa,AL,Public,35625,38563,21973.0,16494.0,46744,97400.0,53.0,1050.0,1280.0,23.0,32.0,www.ua.edu,33.2095614,-87.5675258,Alabama
+253,College of Saint Benedict,St. Joseph,MN,Private,1937,2022,25020.0,28210.0,56880,88600.0,81.0,1010.0,1220.0,22.0,28.0,www.csbsju.edu,45.5645229,-94.31805159999999,Minnesota
+254,Saint John's University (MN),Collegeville,MN,Private,1815,1816,23977.0,27780.0,55872,108400.0,80.0,970.0,1190.0,22.0,27.0,www.csbsju.edu/About/Saint-Johns-University.htm,45.5944117,-94.3622868,Minnesota
+255,California Lutheran University,Thousand Oaks,CA,Private,3207,4236,25871.0,27282.0,59877,95000.0,73.0,1060.0,1230.0,21.0,27.0,www.callutheran.edu,34.1714271,-118.91058770000001,California
+256,"Embry-Riddle Aeronautical University, Prescott",Prescott,AZ,Private,2543,2663,32898.0,15756.0,51036,117900.0,77.0,1130.0,1350.0,23.0,29.0,www.prescott.erau.edu,34.539996200000004,-112.4687616,Arizona
+257,Beloit College,Beloit,WI,Private,1402,1509,13972.0,30344.0,59442,85700.0,54.0,,,,,www.beloit.edu,42.508327200000004,-89.031784,Wisconsin
+258,Western Washington University,Bellingham,WA,Public,15915,16246,16220.0,6500.0,38067,99300.0,85.0,1080.0,1280.0,22.0,28.0,www.wwu.edu,48.754401200000004,-122.47883610000001,Washington
+259,Rockhurst University,Kansas City,MO,Private,2176,3043,22901.0,26031.0,51631,92500.0,72.0,1050.0,1230.0,22.0,27.0,www.rockhurst.edu,39.100105,-94.5781416,Missouri
+260,University of Kansas,Lawrence,KS,Public,20894,27625,18814.0,9205.0,41074,98600.0,93.0,,,23.0,28.0,www.ku.edu,38.9719384,-95.2359496,Kansas
+261,Oregon State University,Corvallis,OR,Public,29777,30896,20493.0,8263.0,44706,104800.0,79.0,1070.0,1300.0,22.0,28.0,oregonstate.edu,44.5645659,-123.2620435,Oregon
+262,"University of Maryland, Baltimore County",Baltimore,MD,Public,12702,13662,20539.0,9402.0,41674,103600.0,60.0,1140.0,1360.0,24.0,29.0,www.umbc.edu,39.2908816,-76.610759,Maryland
+263,Point Loma Nazarene University,San Diego,CA,Private,3313,4417,31452.0,16687.0,49844,90100.0,76.0,1100.0,1290.0,23.0,28.0,www.pointloma.edu,32.7174202,-117.16277279999998,California
+264,Wheaton College (MA),Norton,MA,Private,1688,1695,27875.0,31592.0,65818,97500.0,48.0,1150.0,1350.0,26.0,30.0,www.wheatoncollege.edu,41.9667666,-71.1869939,Massachusetts
+265,New School,New York,NY,Private,8911,10389,40819.0,19358.0,69475,101700.0,62.0,1100.0,1310.0,24.0,28.0,www.newschool.edu,40.7127281,-74.0060152,New York
+266,Calvin University,Grand Rapids,MI,Private,3840,4232,25596.0,18532.0,46790,91100.0,83.0,1100.0,1330.0,23.0,30.0,www.calvin.edu,42.963240500000005,-85.66786390000001,Michigan
+267,Christopher Newport University,Newport News,VA,Public,5001,5081,22351.0,5737.0,41876,87200.0,72.0,,,,,www.cnu.edu,37.1061414,-76.50080030000001,Virginia
+268,New Jersey Institute of Technology,Newark,NJ,Public,9366,11446,19409.0,13782.0,51518,121300.0,61.0,1190.0,1370.0,24.0,30.0,www.njit.edu,40.735657,-74.1723667,New Jersey
+269,Juniata College,Huntingdon,PA,Private,1495,1638,24795.0,29639.0,58165,93100.0,71.0,,,,,www.juniata.edu,40.484795899999995,-78.0102813,Pennsylvania
+270,College of the Ozarks,Point Lookout,MO,Private,1508,1773,8352.0,15362.0,29539,71100.0,13.0,1088.0,1235.0,21.0,26.0,www.cofo.edu,36.6161033,-93.23984250000001,Missouri
+271,University of Arkansas,Fayetteville,AR,Public,24344,27558,16069.0,6629.0,40162,98000.0,66.0,1110.0,1280.0,23.0,29.0,www.uark.edu,36.0625843,-94.1574328,Arkansas
+272,"California State University, Long Beach",Long Beach,CA,Public,34415,37622,9423.0,8454.0,35946,101700.0,28.0,1020.0,1230.0,20.0,26.0,www.csulb.edu,33.7690164,-118.191604,California
+273,"California State Polytechnic University, Pomona",Pomona,CA,Public,24747,26053,13068.0,7957.0,37937,110800.0,55.0,1010.0,1230.0,20.0,27.0,www.csupomona.edu,34.05538129999999,-117.75174960000001,California
+274,"CUNY, Queens College",Queens,NY,Public,19866,20379,3318.0,9104.0,35692,96700.0,43.0,1060.0,1220.0,,,www.qc.cuny.edu/Pages/home.aspx,40.74982429999999,-73.7976337,New York
+275,University of Redlands,Redlands,CA,Private,3556,4898,29520.0,30419.0,67024,102400.0,75.0,1070.0,1250.0,23.0,28.0,www.redlands.edu,34.055735,-117.1888961,California
+276,Michigan Technological University,Houghton,MI,Public,6148,7292,15481.0,11959.0,46344,116300.0,74.0,1160.0,1340.0,25.0,30.0,www.mtu.edu,46.8591287,-88.7774734,Michigan
+277,New College of Florida,Sarasota,FL,Public,859,885,10248.0,9341.0,43678,86500.0,69.0,1190.0,1380.0,25.0,30.0,www.ncf.edu,27.3364347,-82.5306527,Florida
+278,University of Dallas,Irving,TX,Private,1505,2510,23663.0,25952.0,54876,96400.0,47.0,1140.0,1370.0,24.0,31.0,www.udallas.edu,32.829518300000004,-96.9442177,Texas
+279,"University of Illinois, Chicago",Chicago,IL,Public,19476,30539,13866.0,13415.0,43518,103800.0,77.0,1080.0,1330.0,20.0,26.0,www.uic.edu/uic,41.875561600000005,-87.6244212,Illinois
+280,Wabash College,Crawfordsville,IN,Private,848,864,21870.0,28547.0,54600,114400.0,63.0,1070.0,1280.0,23.0,28.0,www.wabash.edu,40.0401991,-86.8990249,Indiana
+281,Washington College,Chestertown,MD,Private,1484,1520,28943.0,26844.0,61010,93500.0,48.0,,,,,www.washcoll.edu,39.2089986,-76.0666126,Maryland
+282,Saint Michael's College,Colchester,VT,Private,2077,2126,30142.0,23373.0,57560,98500.0,85.0,,,,,www.smcvt.edu,44.536001500000005,-73.2058402,Vermont
+283,The Catholic University of America,Washington,DC,Private,3323,6023,32731.0,24577.0,62482,105100.0,83.0,,,,,www.cua.edu,38.8949924,-77.0365581,District of Columbia
+284,Massachusetts Maritime Academy,Buzzards Bay,MA,Public,1780,1811,18027.0,10571.0,43085,117500.0,83.0,1040.0,1200.0,21.0,25.0,www.maritime.edu,41.745383000000004,-70.618087,Massachusetts
+285,Siena College,Loudonville,NY,Private,3226,3288,27588.0,24332.0,53855,101500.0,78.0,,,,,www.siena.edu/pages/1.asp,42.704800899999995,-73.75484240000002,New York
+286,Bennington College,Bennington,VT,Private,782,851,29815.0,35753.0,70760,90000.0,57.0,,,,,www.bennington.edu/Home.aspx,42.8783183,-73.1971692,Vermont
+287,John Carroll University,University Heights,OH,Private,3273,3545,25017.0,25797.0,55820,97300.0,85.0,1000.0,1140.0,22.0,27.0,www.sites.jcu.edu,41.497831,-81.537346,Ohio
+288,Saint Mary's College (IN),Notre Dame,IN,Private,1637,1690,23244.0,25970.0,55200,89300.0,78.0,1030.0,1250.0,23.0,29.0,www.saintmarys.edu,41.704567700000005,-86.2382203,Indiana
+289,Seattle Pacific University,Seattle,WA,Private,3359,3783,30299.0,23350.0,56485,103400.0,91.0,1060.0,1280.0,21.0,27.0,www.spu.edu,47.6038321,-122.3300624,Washington
+290,"University at Albany, SUNY",Albany,NY,Public,14939,17743,18093.0,9096.0,40562,101700.0,54.0,1080.0,1260.0,22.0,26.0,www.albany.edu,42.6511674,-73.754968,New York
+291,Messiah College,Mechanicsburg,PA,Private,2866,3331,27200.0,18110.0,47930,93100.0,77.0,1100.0,1310.0,22.0,29.0,www.messiah.edu,40.2101972,-77.0047276,Pennsylvania
+292,Hofstra University,Hempstead,NY,Private,7438,11131,32240.0,24541.0,61260,110400.0,64.0,1130.0,1310.0,24.0,29.0,www.hofstra.edu,40.7063185,-73.618684,New York
+293,Biola University,La Mirada,CA,Private,4256,6172,31492.0,18028.0,54516,92500.0,72.0,1063.0,1298.0,21.0,28.0,www.biola.edu,33.906097100000004,-118.0107092,California
+294,Duquesne University,Pittsburgh,PA,Private,6467,9190,28961.0,19545.0,52108,96100.0,72.0,1120.0,1270.0,24.0,29.0,www.duq.edu,40.4416941,-79.99008609999998,Pennsylvania
+295,San Jose State University,San Jose,CA,Public,27394,35835,14627.0,8545.0,40046,114700.0,67.0,1000.0,1210.0,19.0,26.0,www.sjsu.edu,37.3361905,-121.890583,California
+296,Ursinus College,Collegeville,PA,Private,1507,1576,29219.0,32962.0,66242,101800.0,78.0,1110.0,1310.0,24.0,30.0,www.ursinus.edu,40.1856597,-75.451571,Pennsylvania
+297,Saint Mary's College of California,Moraga,CA,Private,3018,3913,33570.0,29572.0,65524,110800.0,82.0,1060.0,1240.0,22.0,27.0,www.stmarys-ca.edu,37.834897,-122.12883000000001,California
+298,Regis University,Denver,CO,Private,5127,8341,23672.0,21367.0,51202,94800.0,60.0,1070.0,1266.0,20.0,26.0,www.regis.edu,39.7392364,-104.98486229999999,Colorado
+299,Temple University,Philadelphia,PA,Public,31739,39967,23366.0,10739.0,44190,95900.0,57.0,,,,,www.temple.edu,39.9527237,-75.16352619999999,Pennsylvania
+300,"California State University, Fullerton",Fullerton,CA,Public,38279,40905,8737.0,8436.0,39222,98400.0,46.0,1020.0,1180.0,19.0,24.0,www.fullerton.edu,33.870821500000005,-117.9294165,California
+301,"CUNY, Hunter College",New York,NY,Public,20626,23005,3170.0,8039.0,29454,94500.0,40.0,1120.0,1290.0,,,www.hunter.cuny.edu/main,40.7127281,-74.0060152,New York
+302,Ohio Northern University,Ada,OH,Private,2310,3088,23100.0,20796.0,46118,103900.0,66.0,1130.0,1310.0,22.0,28.0,www.onu.edu,38.8398935,-83.5051704,Ohio
+303,Maryland Institute College of Art,,MD,Private,2041,2128,38763.0,18939.0,62850,84500.0,62.0,1060.0,1290.0,24.0,29.0,,39.5162234,-76.9382069,Maryland
+304,Bradley University,Peoria,IL,Private,4669,5844,24814.0,19250.0,46680,104900.0,71.0,1080.0,1290.0,22.0,28.0,www.bradley.edu,40.6938609,-89.5891008,Illinois
+305,Appalachian State University,Boone,NC,Public,17811,18811,13691.0,8312.0,33819,82700.0,70.0,1100.0,1270.0,23.0,27.0,www.appstate.edu,36.216795,-81.6745517,North Carolina
+306,University of Houston,Houston,TX,Public,40813,45364,16392.0,9530.0,37306,103900.0,61.0,1110.0,1280.0,23.0,27.0,www.uh.edu,29.7589382,-95.36769740000001,Texas
+307,Transylvania University,Lexington,KY,Private,966,983,25405.0,21960.0,50550,85600.0,95.0,,,,,www.transy.edu,38.0464066,-84.4970393,Kentucky
+308,University of Kentucky,Lexington,KY,Public,23718,29465,18527.0,9387.0,45634,96400.0,96.0,1080.0,1330.0,22.0,28.0,www.uky.edu,38.0464066,-84.4970393,Kentucky
+309,California State University Maritime Academy,Vallejo,CA,Public,1090,1181,16416.0,7716.0,39962,129600.0,66.0,,,,,www.csum.edu/web/mycampus/home;jsessionid=788be41b906ebd9485432c0ba641d830,38.1040864,-122.25663670000002,California
+310,Presbyterian College,Clinton,SC,Private,1135,1280,18504.0,31372.0,51910,89900.0,65.0,1020.0,1250.0,21.0,27.0,www.presby.edu,34.4726277,-81.8806562,South Carolina
+311,Texas Tech University,Lubbock,TX,Public,32154,36996,17134.0,6632.0,33425,106500.0,69.0,1070.0,1240.0,22.0,27.0,www.texastech.edu,33.563520600000004,-101.879336,Texas
+312,"Embry-Riddle Aeronautical University, Daytona Beach",Daytona Beach,FL,Private,5777,6338,33120.0,15100.0,51828,111200.0,75.0,1080.0,1310.0,22.0,28.0,daytonabeach.erau.edu,29.2108147,-81.02283309999999,Florida
+313,University of Cincinnati,Cincinnati,OH,Public,28857,37155,22828.0,7045.0,44490,97300.0,76.0,1120.0,1340.0,23.0,28.0,www.uc.edu,39.1014537,-84.5124602,Ohio
+314,Hampden-Sydney College,Hampden-Sydney,VA,Private,1046,1054,31337.0,26751.0,60360,108600.0,55.0,1050.0,1265.0,21.0,27.0,www.hsc.edu,37.241524,-78.4709854,Virginia
+315,Southwestern University,Georgetown,TX,Private,1396,1536,24993.0,25506.0,54330,93500.0,43.0,1110.0,1320.0,23.0,29.0,www.southwestern.edu,30.671598,-97.6550066,Texas
+316,Whitworth University,Spokane,WA,Private,2342,2627,28229.0,26020.0,57824,88800.0,89.0,1090.0,1310.0,23.0,29.0,www.whitworth.edu,47.657193400000004,-117.42351059999999,Washington
+317,Franciscan University of Steubenville,Steubenville,OH,Private,2230,2929,23699.0,10971.0,37790,86200.0,83.0,1080.0,1300.0,23.0,28.0,www.franciscan.edu,40.3697905,-80.63396379999999,Ohio
+318,Belmont University,Nashville,TN,Private,6636,8012,34819.0,13488.0,50740,80900.0,81.0,1140.0,1310.0,24.0,29.0,www.belmont.edu,36.1622296,-86.7743531,Tennessee
+319,Saint Anselm College,Manchester,NH,Private,1964,1995,31268.0,23338.0,56846,100300.0,76.0,1140.0,1300.0,24.0,28.0,www.anselm.edu,42.995639700000005,-71.4547891,New Hampshire
+320,Towson University,Towson,MD,Public,21615,22705,17893.0,8815.0,38754,91200.0,77.0,1055.0,1210.0,21.0,25.0,www.towson.edu,39.4018552,-76.602388,Maryland
+321,University of Evansville,Evansville,IN,Private,2516,2537,20517.0,26391.0,50868,89900.0,70.0,1020.0,1255.0,22.0,29.0,www.evansville.edu,37.9747645,-87.5558483,Indiana
+322,Earlham College,Richmond,IN,Private,1072,1128,19454.0,36987.0,58670,88400.0,52.0,1190.0,1400.0,25.0,30.0,www.earlham.edu,39.828689700000005,-84.8898521,Indiana
+323,College of Charleston,Charleston,SC,Public,10863,11322,19311.0,9018.0,48057,85100.0,80.0,1070.0,1230.0,22.0,27.0,www.cofc.edu,32.7876012,-79.9402728,South Carolina
+324,Dordt University,Sioux Center,IA,Private,1533,1579,23792.0,16673.0,43800,89600.0,72.0,1050.0,1320.0,22.0,28.0,www.dordt.edu,43.079692,-96.17567199999999,Iowa
+325,Xavier University,Cincinnati,OH,Private,4893,6786,30019.0,20690.0,52380,94000.0,74.0,1060.0,1240.0,22.0,28.0,www.xavier.edu,39.1014537,-84.5124602,Ohio
+326,Milwaukee School of Engineering,Milwaukee,WI,Private,2779,2823,21328.0,25716.0,52046,117600.0,63.0,1153.0,1360.0,25.0,30.0,www.msoe.edu/home,43.0349931,-87.92249699999999,Wisconsin
+327,Pacific Lutheran University,Tacoma,WA,Private,2942,3122,24034.0,26984.0,54800,98100.0,75.0,1040.0,1270.0,21.0,27.0,www.plu.edu,47.24957979999999,-122.43987460000001,Washington
+328,Pratt Institute,Brooklyn,NY,Private,4050,5035,43969.0,20362.0,65308,102300.0,57.0,1040.0,1290.0,24.0,29.0,www.pratt.edu,40.650102399999994,-73.9495829,New York
+329,Kettering University,Flint,MI,Private,2129,2311,37247.0,18564.0,59227,125000.0,70.0,1190.0,1350.0,24.0,29.0,www.kettering.edu,43.016169299999994,-83.6900211,Michigan
+330,St. Joseph's College (NY),Brooklyn,NY,Private,1085,1176,16973.0,14686.0,39050,86900.0,68.0,868.0,1060.0,18.0,22.0,www.sjcny.edu,40.650102399999994,-73.9495829,New York
+331,Knox College,Galesburg,IL,Private,1356,1376,22998.0,29331.0,56554,95400.0,72.0,,,,,www.knox.edu,40.9479779,-90.37058420000001,Illinois
+332,Master's University,Santa Clarita,CA,Private,1551,1946,26292.0,18498.0,47766,86600.0,66.0,1030.0,1240.0,20.0,23.0,www.masters.edu,34.3916641,-118.54258600000001,California
+333,SUNY Maritime College,Throggs Neck,NY,Public,1778,1794,18413.0,7134.0,34958,140700.0,69.0,1100.0,1253.0,22.0,26.0,www.sunymaritime.edu,40.8214533,-73.8241911,New York
+334,"University of Wisconsin, La Crosse",La Crosse,WI,Public,10480,10548,14424.0,2975.0,26055,88300.0,73.0,,,22.0,26.0,www.uwlax.edu,43.8014053,-91.2395429,Wisconsin
+335,"California State University, Chico",Chico,CA,Public,17732,17875,14703.0,8615.0,36300,105100.0,68.0,990.0,1170.0,19.0,25.0,www.csuchico.edu,39.728494500000004,-121.8374777,California
+336,"University of North Carolina, Wilmington",Wilmington,NC,Public,16060,16487,18093.0,5471.0,38678,80500.0,67.0,1185.0,1310.0,23.0,27.0,uncw.edu,34.2257282,-77.9447107,North Carolina
+337,Rochester Institute of Technology,Rochester,NY,Private,15217,16584,30187.0,21055.0,54714,106600.0,57.0,1190.0,1380.0,26.0,32.0,www.rit.edu,43.157284999999995,-77.615214,New York
+338,Wagner College,Staten Island,NY,Private,1858,2271,30106.0,26903.0,62203,105900.0,70.0,,,,,wagner.edu,40.5834557,-74.14960479999999,New York
+339,Hendrix College,Conway,AR,Private,1249,1354,20695.0,35974.0,60096,90300.0,80.0,1100.0,1410.0,24.0,31.0,www.hendrix.edu,35.252199600000004,-92.6888936,Arkansas
+340,Illinois State University,Normal,IL,Public,20115,20784,21345.0,9124.0,40036,95000.0,89.0,,,21.0,26.0,www.illinoisstate.edu,40.5117699,-88.99448149999999,Illinois
+341,Ramapo College of New Jersey,Mahwah,NJ,Public,6120,6466,21316.0,11907.0,39973,95200.0,57.0,1050.0,1230.0,21.0,26.0,https://www.ramapo.edu,41.0887072,-74.1437552,New Jersey
+342,Westminster College (UT),Salt Lake City,UT,Private,2422,2570,21109.0,20070.0,47784,92200.0,93.0,1060.0,1267.0,21.0,28.0,https://www.westminstercollege.edu,40.759619799999996,-111.88679750000001,Utah
+343,Mills College,Oakland,CA,Private,869,1310,24558.0,35560.0,63767,91200.0,87.0,,,,,www.mills.edu,37.804455700000005,-122.27135630000001,California
+344,Luther College,Decorah,IA,Private,2053,2214,25273.0,26533.0,54045,85900.0,65.0,1023.0,1305.0,23.0,28.0,www.luther.edu,43.3041609,-91.7859098,Iowa
+345,Virginia Commonwealth University,Richmond,VA,Public,26355,30675,21655.0,9187.0,51204,88200.0,84.0,1070.0,1260.0,21.0,27.0,www.vcu.edu,37.53850870000001,-77.43428,Virginia
+346,St. Norbert College,De Pere,WI,Private,2162,2165,24930.0,20123.0,48110,88700.0,79.0,1110.0,1230.0,22.0,27.0,www.snc.edu,44.448747600000004,-88.06010859999999,Wisconsin
+347,University of Wyoming,Laramie,WY,Public,10874,12397,13070.0,7422.0,31387,98800.0,97.0,1040.0,1290.0,22.0,27.0,www.uwyo.edu,41.311367,-105.591101,Wyoming
+348,Austin College,Sherman,TX,Private,1228,1288,21011.0,29820.0,53784,93100.0,52.0,1160.0,1360.0,23.0,29.0,www.austincollege.edu,36.2452294,-101.8858689,Texas
+349,"University of Nevada, Reno",Reno,NV,Public,20196,21657,14505.0,5672.0,38398,95000.0,88.0,1070.0,1260.0,21.0,26.0,www.unr.edu,39.5261206,-119.81265810000001,Nevada
+350,Simmons College,Boston,MA,Private,1825,6283,28308.0,26660.0,58230,94300.0,60.0,1130.0,1310.0,24.0,29.0,www.simmons.edu,42.3602534,-71.0582912,Massachusetts
+351,Allegheny College,Meadville,PA,Private,1802,1957,22927.0,33282.0,61120,93500.0,68.0,1140.0,1320.0,23.0,29.0,allegheny.edu,41.641445000000004,-80.151449,Pennsylvania
+352,Bethel University,Saint Paul,MN,Private,3006,3797,27151.0,19821.0,50350,85700.0,83.0,1030.0,1360.0,21.0,27.0,www.bethel.edu,44.9504037,-93.10150259999999,Minnesota
+353,Adelphi University,Garden City,NY,Private,5768,7978,28322.0,20425.0,56358,96400.0,73.0,1060.0,1240.0,22.0,27.0,www.adelphi.edu,40.7266477,-73.6343052,New York
+354,"SUNY, College at New Paltz",New Paltz,NY,Public,7565,7709,16192.0,8061.0,34080,85200.0,44.0,1100.0,1260.0,23.0,28.0,www.newpaltz.edu,41.7464972,-74.08448940000001,New York
+355,Wentworth Institute of Technology,Boston,MA,Private,4457,4543,36690.0,13455.0,54071,112700.0,92.0,1080.0,1270.0,22.0,28.0,https://wit.edu,42.3602534,-71.0582912,Massachusetts
+356,Drew University,Madison,NJ,Private,1678,2117,26218.0,35351.0,66486,95000.0,63.0,,,,,www.drew.edu,40.7598227,-74.417097,New Jersey
+357,Gordon College,Wenham,MA,Private,1784,1963,28240.0,17558.0,49940,91300.0,89.0,1050.0,1290.0,22.0,29.0,www.gordon.edu,42.6042806,-70.8931571,Massachusetts
+358,Oklahoma State University,Stillwater,OK,Public,23241,25295,14824.0,9874.0,38686,98600.0,74.0,1070.0,1260.0,22.0,28.0,okstate.edu,36.1156306,-97.0585717,Oklahoma
+359,Millsaps College,Jackson,MS,Private,859,871,22292.0,29468.0,55322,88700.0,49.0,1110.0,1320.0,22.0,28.0,www.millsaps.edu,32.29903839999999,-90.1847691,Mississippi
+360,Georgia College &amp; State University,Milledgeville,GA,Public,6804,6952,19686.0,7252.0,46834,80300.0,79.0,1100.0,1260.0,23.0,27.0,www.gcsu.edu,33.0801429,-83.2320991,Georgia
+361,Rowan University,Glassboro,NJ,Public,16047,18484,23692.0,9357.0,39526,91200.0,69.0,1050.0,1260.0,22.0,28.0,www.rowan.edu,39.7027677,-75.1119434,New Jersey
+362,"CUNY, Brooklyn College",Brooklyn,NY,Public,17679,17803,4211.0,9250.0,34942,97800.0,40.0,1050.0,1210.0,,,www.brooklyn.cuny.edu,40.650102399999994,-73.9495829,New York
+363,John Brown University,Siloam Springs,AR,Private,2230,2613,22583.0,15476.0,38834,82700.0,76.0,1080.0,1310.0,24.0,29.0,www.jbu.edu,36.1881365,-94.5404962,Arkansas
+364,Florida International University,Miami,FL,Public,55835,56718,12503.0,6471.0,36086,90100.0,54.0,1080.0,1240.0,22.0,27.0,www.fiu.edu,25.7741728,-80.19362,Florida
+365,Salisbury University,Salisbury,MD,Public,8714,8721,18792.0,5527.0,34102,89800.0,65.0,,,,,www.salisbury.edu,38.3662114,-75.60088809999999,Maryland
+366,Kansas State University,Manhattan,KS,Public,21022,22795,17926.0,6435.0,39696,97200.0,94.0,,,,,www.k-state.edu,39.1836082,-96.5716694,Kansas
+367,Concordia College—Moorhead,Moorhead,MN,Private,2059,2140,23393.0,23456.0,49488,85200.0,62.0,1055.0,1305.0,22.0,28.0,www.concordiacollege.edu,46.8739081,-96.75386740000002,Minnesota
+368,"University of Wisconsin, Eau Claire",Eau Claire,WI,Public,10904,10944,16188.0,3449.0,27990,93600.0,76.0,,,21.0,26.0,www.uwec.edu,44.811349,-91.4984941,Wisconsin
+369,North Dakota State University,Fargo,ND,Public,12915,14358,15265.0,4666.0,33478,98600.0,92.0,1060.0,1328.0,21.0,26.0,www.ndsu.edu,46.877229,-96.78982099999999,North Dakota
+370,Sacred Heart University,Fairfield,CT,Private,5937,8543,39973.0,15472.0,58440,100500.0,60.0,,,,,www.sacredheart.edu,41.1412078,-73.26372579999999,Connecticut
+371,Hanover College,Hanover,IN,Private,1089,1103,21898.0,26000.0,50450,85100.0,84.0,1070.0,1260.0,22.0,27.0,www.hanover.edu,38.7142263,-85.47357070000001,Indiana
+372,Florida Institute of Technology,Melbourne,FL,Private,3943,6402,31592.0,23760.0,59650,105400.0,63.0,1130.0,1320.0,24.0,29.0,www.fit.edu,28.106471000000003,-80.63715129999999,Florida
+373,Hampshire College,Amherst,MA,Private,1268,1382,29416.0,30632.0,67114,92300.0,63.0,,,,,www.hampshire.edu,42.3685658,-72.505714,Massachusetts
+374,Saint John Fisher College,Rochester,NY,Private,2976,3776,27022.0,17631.0,47770,86700.0,65.0,1060.0,1230.0,22.0,26.0,www.sjfc.edu,43.157284999999995,-77.615214,New York
+375,"University of Minnesota, Morris",Morris,MN,Public,1627,1912,11051.0,11572.0,25942,85300.0,64.0,1150.0,1390.0,22.0,28.0,www.morris.umn.edu,45.586071999999994,-95.91394100000001,Minnesota
+376,Roger Williams University,Bristol,RI,Private,5024,5472,35100.0,13685.0,52700,92700.0,82.0,,,,,www.rwu.edu,41.6770463,-71.2661597,Rhode Island
+377,La Salle University,Philadelphia,PA,Private,3896,5197,25937.0,27431.0,45476,104800.0,79.0,,,,,www.lasalle.edu,39.9527237,-75.16352619999999,Pennsylvania
+378,Lebanon Valley College,Annville,PA,Private,1784,1910,27137.0,26230.0,57390,93100.0,73.0,1063.0,1250.0,22.0,26.0,www.lvc.edu,40.329590100000004,-76.515226,Pennsylvania
+379,Assumption College,Worcester,MA,Private,2318,2481,28285.0,20777.0,54594,95700.0,79.0,,,,,www.assumption.edu,42.2761217,-71.8058232,Massachusetts
+380,Merrimack College,North Andover,MA,Private,3786,4191,32442.0,20113.0,57865,102500.0,82.0,,,,,www.merrimack.edu/index.php,42.683989399999994,-71.11270649999999,Massachusetts
+381,Grove City College,Grove City,PA,Private,2373,2383,,6843.0,28504,98400.0,80.0,1071.0,1249.0,23.0,32.0,www.gcc.edu,41.1579008,-80.08866309999999,Pennsylvania
+382,University of St. Thomas (TX),Houston,TX,Private,1979,3168,17309.0,23263.0,46506,92000.0,81.0,1070.0,1235.0,21.0,27.0,www.stthom.edu/home/index.aqf,29.7589382,-95.36769740000001,Texas
+383,Le Moyne College,Syracuse,NY,Private,3148,3431,23130.0,22291.0,49995,91700.0,64.0,1080.0,1240.0,22.0,27.0,www.lemoyne.edu,43.0481221,-76.1474244,New York
+384,St. Edward's University,Austin,TX,Private,4300,4447,22968.0,28957.0,58700,89100.0,84.0,1080.0,1250.0,22.0,28.0,www.stedwards.edu/contactus,30.2711286,-97.7436995,Texas
+385,"University of Hawaii, Manoa",Honolulu,HI,Public,15299,17612,15307.0,7227.0,51550,91600.0,83.0,1050.0,1240.0,21.0,26.0,www.manoa.hawaii.edu,21.304547,-157.8556764,Hawaii
+386,Augustana College,Rock Island,IL,Private,2591,2647,24745.0,27532.0,53422,88900.0,59.0,,,,,www.augustana.edu,41.4411786,-90.57661440000001,Illinois
+387,Covenant College,Lookout Mountain,GA,Private,1017,1068,22202.0,21187.0,45920,79400.0,95.0,1130.0,1350.0,24.0,30.0,www.covenant.edu,34.9775758,-85.3577363,Georgia
+388,Howard University,Washington,DC,Private,6156,9392,23424.0,20427.0,43201,101300.0,41.0,1090.0,1290.0,22.0,28.0,www.howard.edu,38.8949924,-77.0365581,District of Columbia
+389,Union University (TN),Jackson,TN,Private,2853,3377,22839.0,24075.0,51790,83000.0,60.0,1070.0,1320.0,23.0,29.0,www.uu.edu,35.6144446,-88.8177418,Tennessee
+390,Iona College,New Rochelle,NY,Private,3649,3792,26717.0,23110.0,55864,106200.0,92.0,980.0,1180.0,20.0,25.0,www.iona.edu,40.9115386,-73.78263630000001,New York
+391,Lipscomb University,Nashville,TN,Private,3705,4642,24279.0,18955.0,47734,84800.0,60.0,1060.0,1330.0,23.0,29.0,www.lipscomb.edu,36.1622296,-86.7743531,Tennessee
+392,Carroll College,Helena,MT,Private,1362,1415,26297.0,20475.0,48538,91400.0,78.0,1080.0,1270.0,22.0,28.0,www.carroll.edu,46.5927425,-112.03627709999999,Montana
+393,Berry College,Mount Berry,GA,Private,2110,2138,24165.0,21883.0,50632,84900.0,62.0,1120.0,1300.0,24.0,29.0,www.berry.edu,34.2798482,-85.1820652,Georgia
+394,Elizabethtown College,Elizabethtown,PA,Private,1735,1766,28222.0,27431.0,58490,89700.0,74.0,1070.0,1280.0,22.0,27.0,www.etown.edu,40.153364,-76.6042521,Pennsylvania
+395,College of St. Scholastica,Duluth,MN,Private,3143,4276,23935.0,23314.0,49104,86800.0,68.0,1020.0,1300.0,19.0,27.0,www.css.edu,46.77293220000001,-92.1251218,Minnesota
+396,Augustana University,Sioux Falls,SD,Private,1743,2080,18446.0,21816.0,45458,88400.0,68.0,1070.0,1290.0,23.0,29.0,www.augie.edu,43.5499749,-96.700327,South Dakota
+397,Louisiana Tech University,Ruston,LA,Public,12708,12839,10774.0,10650.0,29277,100700.0,65.0,870.0,1100.0,22.0,27.0,www.latech.edu,32.5232053,-92.637927,Louisiana
+398,George Fox University,Newberg,OR,Private,2821,4076,28366.0,17754.0,48902,89600.0,82.0,1050.0,1270.0,21.0,27.0,www.georgefox.edu,45.300346999999995,-122.972751,Oregon
+399,University of North Dakota,Grand Forks,ND,Public,13957,14406,15056.0,4640.0,33017,96000.0,83.0,1050.0,1270.0,21.0,26.0,www.und.edu,47.9078244,-97.0592028,North Dakota
+400,Pace University,New York,NY,Private,10063,12986,29588.0,28509.0,64982,107800.0,80.0,1040.0,1220.0,21.0,27.0,www.pace.edu,40.7127281,-74.0060152,New York
+401,University of Mississippi,University,MS,Public,20940,23136,13929.0,9642.0,40086,89100.0,84.0,1070.0,1290.0,22.0,29.0,www.olemiss.edu,34.3653695,-89.5350279,Mississippi
+402,California Institute of the Arts,,CA,Private,991,1498,46101.0,15401.0,68993,91000.0,24.0,,,,,,36.7014631,-118.75599740000001,California
+403,Linfield College,McMinnville,OR,Private,1535,1692,27254.0,25864.0,56712,92000.0,81.0,1020.0,1210.0,20.0,26.0,www.linfield.edu,45.2100367,-123.19446299999998,Oregon
+404,Berklee College of Music,,MA,Private,6762,6952,47270.0,19811.0,63574,84200.0,53.0,,,,,,29.825009,-95.478675,Massachusetts
+405,University of Northern Iowa,Cedar Falls,IA,Public,11334,11861,16496.0,4677.0,31872,85300.0,81.0,1080.0,1360.0,21.0,26.0,www.uni.edu,42.527412299999995,-92.4453179,Iowa
+406,New Mexico Institute of Mining and Technology,Socorro,NM,Public,1707,2009,13694.0,6883.0,35153,120400.0,22.0,1190.0,1390.0,23.0,29.0,www.nmt.edu,34.057285799999995,-106.89307990000002,New Mexico
+407,St. John's University (NY),Queens,NY,Private,17861,21340,25747.0,25628.0,59865,106600.0,68.0,1060.0,1250.0,22.0,29.0,www.stjohns.edu/contact.stj,40.74982429999999,-73.7976337,New York
+408,University of Massachusetts Lowell,Lowell,MA,Public,16407,18315,19322.0,9817.0,46983,109300.0,69.0,1130.0,1310.0,24.0,29.0,www.uml.edu,42.633424700000006,-71.3161718,Massachusetts
+409,South Dakota School of Mines and Technology,Rapid City,SD,Public,2778,2885,19759.0,4230.0,28770,118500.0,83.0,1150.0,1353.0,24.0,29.0,www.sdsmt.edu,44.086932899999994,-103.22744809999999,South Dakota
+410,Goucher College,Baltimore,MD,Private,1508,2236,25306.0,29040.0,59810,90600.0,79.0,,,,,www.goucher.edu,39.2908816,-76.610759,Maryland
+411,"CUNY, The City College of New York",New York,NY,Public,15842,16001,2540.0,9669.0,36674,99100.0,46.0,1040.0,1240.0,,,www.ccny.cuny.edu,40.7127281,-74.0060152,New York
+412,Nebraska Wesleyan University,Lincoln,NE,Private,2064,3703,23652.0,18976.0,46544,80500.0,71.0,1040.0,1300.0,22.0,28.0,www.nebrwesleyan.edu,40.8088861,-96.70777509999999,Nebraska
+413,Brigham Young University-Idaho,Rexburg,ID,Private,51881,69458,7977.0,4070.0,12322,93500.0,95.0,990.0,1180.0,20.0,25.0,www.byui.edu,43.823516299999994,-111.78702220000001,Idaho
+414,Valparaiso University,Valparaiso,IN,Private,3531,4026,21946.0,26441.0,52980,98000.0,84.0,1060.0,1270.0,23.0,29.0,www.valpo.edu,41.4730948,-87.0611412,Indiana
+415,Lake Forest College,Lake Forest,IL,Private,1542,1640,24628.0,31022.0,58675,102600.0,53.0,,,,,www.lakeforest.edu,42.2586342,-87.840625,Illinois
+416,Azusa Pacific University,Azusa,CA,Private,6263,9926,27267.0,21186.0,52396,85700.0,60.0,990.0,1220.0,21.0,27.0,www.apu.edu,34.1338751,-117.90560459999999,California
+417,"California State University, Fresno",Fresno,CA,Public,23020,25325,5872.0,10267.0,32311,97300.0,59.0,910.0,1110.0,16.0,22.0,www.fresnostate.edu,36.7295295,-119.7088613,California
+418,West Chester University of Pennsylvania,West Chester,PA,Public,15851,17306,22193.0,5743.0,38253,92200.0,69.0,1040.0,1210.0,21.0,26.0,www.wcupa.edu,39.9597213,-75.6059638,Pennsylvania
+419,Goshen College,Goshen,IN,Private,921,950,19251.0,23958.0,46500,79200.0,64.0,980.0,1233.0,19.0,28.0,www.goshen.edu,41.5824086,-85.834366,Indiana
+420,Agnes Scott College,Decatur,GA,Private,921,981,20356.0,29066.0,54065,83600.0,66.0,,,,,www.agnesscott.edu,33.7737582,-84.29606899999999,Georgia
+421,Maryville University of Saint Louis,St. Louis,MO,Private,3486,7689,23891.0,12346.0,46076,80100.0,92.0,983.0,1265.0,21.0,27.0,www.maryville.edu,38.6264178,-90.1998378,Missouri
+422,Montclair State University,Montclair,NJ,Public,18785,21013,18500.0,9983.0,38435,95400.0,71.0,990.0,1150.0,,,www.montclair.edu,40.8164458,-74.2210643,New Jersey
+423,Oregon Institute of Technology,Klamath Falls,OR,Public,5486,7358,17041.0,5674.0,42093,106800.0,61.0,1040.0,1230.0,21.0,26.0,www.oit.edu,42.224866999999996,-121.78167040000001,Oregon
+424,Albion College,Albion,MI,Private,1476,1568,17863.0,34181.0,56750,99300.0,71.0,1010.0,1200.0,20.0,26.0,www.albion.edu,42.243097,-84.7530304,Michigan
+425,University of North Florida,Jacksonville,FL,Public,16309,16531,13795.0,7267.0,35614,86600.0,59.0,1090.0,1280.0,21.0,26.0,www.unf.edu,30.3321838,-81.655651,Florida
+426,San Francisco State University,San Francisco,CA,Public,29485,29758,13787.0,8470.0,38599,99500.0,70.0,950.0,1150.0,18.0,24.0,www.sfsu.edu,37.779026200000004,-122.4199061,California
+427,Montana State University,Bozeman,MT,Public,15848,16613,17754.0,5661.0,38121,96200.0,83.0,1090.0,1300.0,21.0,28.0,www.montana.edu,45.679429299999995,-111.04404740000001,Montana
+428,High Point University,High Point,NC,Private,4608,4951,38741.0,10331.0,51105,84300.0,81.0,1050.0,1240.0,21.0,27.0,www.highpoint.edu,35.9556924,-80.0053176,North Carolina
+429,Whittier College,Whittier,CA,Private,1660,1987,25322.0,28841.0,61409,95600.0,74.0,1010.0,1220.0,21.0,27.0,www.whittier.edu,33.9708782,-118.0308396,California
+430,Eckerd College,St. Petersburg,FL,Private,2037,2200,32718.0,23182.0,59200,88400.0,73.0,1060.0,1260.0,23.0,29.0,www.eckerd.edu,27.770379600000002,-82.66950849999999,Florida
+431,University of Louisville,Louisville,KY,Public,18009,21402,16721.0,9589.0,41472,87600.0,75.0,1070.0,1290.0,22.0,28.0,www.louisville.edu,38.254237599999996,-85.759407,Kentucky
+432,Mississippi State University,Starkville,MS,Public,19554,21883,16192.0,10003.0,38410,94100.0,62.0,,,21.0,28.0,www.msstate.edu,33.4503998,-88.8183872,Mississippi
+433,University of Tampa,Tampa,FL,Private,8101,8895,29735.0,12304.0,43708,91500.0,53.0,1070.0,1230.0,22.0,27.0,www.ut.edu,27.947759499999997,-82.458444,Florida
+434,"California State University, Stanislaus",Turlock,CA,Public,9299,10327,6295.0,8875.0,32434,94200.0,77.0,,,,,www.csustan.edu,37.494656799999994,-120.84659409999999,California
+435,University of Idaho,Moscow,ID,Public,11344,12072,14354.0,6993.0,37624,97700.0,73.0,1010.0,1230.0,20.0,26.0,www.uidaho.edu,46.7323875,-117.00016509999999,Idaho
+436,Cornell College (IA),Mount Vernon,IA,Private,1006,1009,24355.0,26957.0,55954,90600.0,65.0,1100.0,1340.0,23.0,29.0,www.cornellcollege.edu/index.shtml,41.922244299999996,-91.4171209,Iowa
+437,Washington &amp; Jefferson College,Washington,PA,Private,1412,1424,27925.0,29017.0,60134,92100.0,48.0,,,,,www.washjeff.edu,31.3991238,-88.2019828,Pennsylvania
+438,Ohio University,Athens,OH,Public,26467,29369,20853.0,6291.0,36706,93300.0,74.0,1080.0,1260.0,22.0,26.0,www.ohio.edu,39.3289242,-82.1012479,Ohio
+439,Stetson University,DeLand,FL,Private,3213,4252,26883.0,30974.0,61374,86000.0,68.0,,,,,www.stetson.edu/home,29.028321299999998,-81.3031098,Florida
+440,Moravian College,Bethlehem,PA,Private,2195,2446,26838.0,25900.0,57868,95300.0,76.0,1010.0,1210.0,21.0,27.0,www.moravian.edu,40.6178915,-75.3786521,Pennsylvania
+441,Abilene Christian University,Abilene,TX,Private,3806,5145,26037.0,18599.0,48300,90900.0,58.0,1025.0,1220.0,21.0,26.0,www.acu.edu,32.44645,-99.7475905,Texas
+442,"University of Minnesota, Duluth",Duluth,MN,Public,10490,11168,17131.0,7100.0,29542,95700.0,77.0,1050.0,1280.0,22.0,26.0,www.d.umn.edu,46.77293220000001,-92.1251218,Minnesota
+443,Stockton University,Galloway,NJ,Public,9105,9216,20364.0,12270.0,37234,85800.0,82.0,1010.0,1200.0,19.0,25.0,www.stockton.edu,40.3692104,-74.1567618,New Jersey
+444,University of Rhode Island,Kingston,RI,Public,16255,18089,19431.0,10834.0,45735,99700.0,70.0,1050.0,1230.0,22.0,27.0,www.uri.edu,41.472928499999995,-71.5223468,Rhode Island
+445,Utah State University,Logan,UT,Public,27679,29784,13279.0,8145.0,33264,93900.0,89.0,1000.0,1220.0,21.0,27.0,www.usu.edu,41.7313447,-111.8348631,Utah
+446,Saint Mary's University of Minnesota,Winona,MN,Private,1883,5754,20210.0,21359.0,45300,93700.0,64.0,960.0,1210.0,20.0,25.0,www.smumn.edu,43.9582272,-91.78077840000002,Minnesota
+447,McDaniel College,Westminster,MD,Private,1646,2819,20333.0,30807.0,55830,94600.0,85.0,1060.0,1230.0,21.0,28.0,www.mcdaniel.edu,39.575263899999996,-76.9959277,Maryland
+448,North Central College,Naperville,IL,Private,2883,2965,23265.0,23128.0,51228,92900.0,54.0,1063.0,1323.0,22.0,27.0,www.northcentralcollege.edu/home,41.772869899999996,-88.14792779999999,Illinois
+449,Bellarmine University,Louisville,KY,Private,2903,3757,24433.0,28601.0,59306,90700.0,89.0,1050.0,1210.0,22.0,27.0,www.bellarmine.edu,38.254237599999996,-85.759407,Kentucky
+450,"SUNY, College at Oneonta",Oneonta,NY,Public,6150,6358,17513.0,7634.0,33812,88000.0,60.0,1040.0,1190.0,21.0,25.0,www.oneonta.edu/home/default.asp,42.453492,-75.0629531,New York
+451,"SUNY, Farmingdale State College",Farmingdale,NY,Public,9574,12307,9443.0,7438.0,33818,93800.0,59.0,980.0,1140.0,19.0,23.0,www.farmingdale.edu,40.735673799999994,-73.44175240000001,New York
+452,University of New England,Biddeford,ME,Private,8281,8798,33183.0,19228.0,54260,91500.0,81.0,1030.0,1210.0,21.0,26.0,www.une.edu,43.4925843,-70.4533844,Maine
+453,Susquehanna University,Selinsgrove,PA,Private,2351,2370,25492.0,30386.0,59780,94700.0,70.0,,,,,www.susqu.edu,40.8062437,-76.86070840000001,Pennsylvania
+454,West Virginia University,Morgantown,WV,Public,24183,28406,11825.0,8964.0,37712,99900.0,72.0,1020.0,1210.0,21.0,27.0,www.wvu.edu,39.629680900000004,-79.9559437,West Virginia
+455,University of La Verne,La Verne,CA,Private,6653,8159,25429.0,24969.0,59826,90500.0,48.0,1020.0,1193.0,19.0,25.0,www.laverne.edu,34.10084260000001,-117.7678355,California
+456,"University of Alabama, Birmingham",Birmingham,AL,Public,13308,20902,17535.0,9254.0,36800,87200.0,92.0,990.0,1370.0,21.0,28.0,www.uab.edu,33.5206824,-86.80243259999999,Alabama
+457,Sonoma State University,Rohnert Park,CA,Public,9244,9481,17296.0,7277.0,37914,97100.0,82.0,980.0,1170.0,19.0,24.0,www.sonoma.edu,38.3396367,-122.70109840000002,California
+458,Canisius College,Buffalo,NY,Private,2861,3464,20913.0,26244.0,52172,90000.0,78.0,1040.0,1260.0,22.0,28.0,www.canisius.edu,42.8867166,-78.87839220000001,New York
+459,Houghton College,Houghton,NY,Private,1043,1231,19325.0,22690.0,44408,77900.0,91.0,1060.0,1320.0,22.0,29.0,www.houghton.edu,42.4215115,-78.164026,New York
+460,Hamline University,Saint Paul,MN,Private,2346,3734,21103.0,26309.0,52178,90400.0,69.0,1015.0,1260.0,20.0,26.0,www.hamline.edu,44.9504037,-93.10150259999999,Minnesota
+461,Ouachita Baptist University,Arkadelphia,AR,Private,1545,1648,18509.0,17776.0,37600,80200.0,71.0,1020.0,1260.0,21.0,28.0,www.obu.edu,34.1209292,-93.053784,Arkansas
+462,Ohio Wesleyan University,Delaware,OH,Private,1560,1712,25194.0,31028.0,60350,99200.0,71.0,,,,,www.owu.edu,40.2986724,-83.067965,Ohio
+463,Birmingham-Southern College,Birmingham,AL,Private,1283,1325,22853.0,26594.0,52414,88300.0,62.0,1030.0,1260.0,23.0,29.0,www.bsc.edu,33.5206824,-86.80243259999999,Alabama
+464,Berea College,Berea,KY,Private,1670,1710,1298.0,33422.0,35394,71600.0,35.0,970.0,1200.0,22.0,27.0,www.berea.edu,37.568694,-84.29632240000001,Kentucky
+465,Roanoke College,Salem,VA,Private,2035,2087,27435.0,26726.0,59327,85100.0,67.0,1040.0,1230.0,22.0,27.0,www.roanoke.edu,37.293378000000004,-80.05466700000001,Virginia
+466,"University of Colorado, Denver",Denver,CO,Public,19806,24839,14941.0,6251.0,44114,95600.0,65.0,1060.0,1280.0,21.0,27.0,www.cu.edu,39.7392364,-104.98486229999999,Colorado
+467,Saint Vincent College,Latrobe,PA,Private,1720,1865,20909.0,25507.0,48879,88300.0,62.0,1020.0,1210.0,20.0,26.0,www.stvincent.edu,40.317287,-79.3840301,Pennsylvania
+468,Spelman College,Atlanta,GA,Private,2137,2166,36740.0,13647.0,51642,85400.0,40.0,1070.0,1215.0,22.0,26.0,www.spelman.edu,33.7489924,-84.3902644,Georgia
+469,"California State University, Sacramento",Sacramento,CA,Public,30445,31255,9733.0,8984.0,37622,101100.0,68.0,940.0,1140.0,17.0,23.0,www.csus.edu,38.5810606,-121.49389509999999,California
+470,Wittenberg University,Springfield,OH,Private,1884,2053,24263.0,26135.0,52056,105400.0,72.0,,,,,www.wittenberg.edu,39.923404600000005,-83.810138,Ohio
+471,South Dakota State University,Brookings,SD,Public,12516,13103,23362.0,4201.0,26052,91900.0,91.0,980.0,1260.0,20.0,26.0,www.sdstate.edu,44.311461,-96.79844,South Dakota
+472,Coe College,Cedar Rapids,IA,Private,1394,1476,20767.0,31543.0,55240,86900.0,56.0,1073.0,1326.0,22.0,28.0,www.coe.edu,41.9758872,-91.6704053,Iowa
+473,East Carolina University,Greenville,NC,Public,25207,29131,15415.0,8225.0,38277,85400.0,79.0,1030.0,1180.0,20.0,24.0,www.ecu.edu,35.612660999999996,-77.3663538,North Carolina
+474,"California State University, Northridge",Northridge,CA,Public,37184,41319,5703.0,9782.0,34007,97300.0,58.0,910.0,1120.0,17.0,22.0,www.csun.edu,34.2345615,-118.53693159999999,California
+475,University of Alabama in Huntsville,Huntsville,AL,Public,7519,9101,19986.0,9587.0,36881,103900.0,81.0,1080.0,1330.0,25.0,31.0,www.uah.edu,34.729847,-86.5859011,Alabama
+476,Mercer University,Macon,GA,Private,5057,8653,21044.0,28528.0,51293,85100.0,73.0,1170.0,1340.0,25.0,30.0,www.mercer.edu,32.8406946,-83.6324022,Georgia
+477,Oklahoma City University,Oklahoma City,OK,Private,1983,2845,26838.0,18588.0,45408,87900.0,72.0,1110.0,1280.0,23.0,28.0,www.okcu.edu,35.4729886,-97.5170536,Oklahoma
+478,Rider University,Lawrenceville,NJ,Private,4371,5073,29086.0,25766.0,59700,99000.0,67.0,990.0,1190.0,19.0,26.0,www.rider.edu,40.3009876,-74.7373728,New Jersey
+479,Loyola University New Orleans,New Orleans,LA,Private,2766,3759,22766.0,27972.0,55402,88600.0,69.0,1080.0,1270.0,22.0,28.0,www.loyno.edu,29.949932300000004,-90.0701156,Louisiana
+480,Nova Southeastern University,Fort-Lauderdale-Davie,FL,Private,4840,20793,26606.0,19075.0,49149,89800.0,58.0,1080.0,1280.0,23.0,28.0,www.nova.edu,26.070536699999998,-80.3559118,Florida
+481,Grand Valley State University,Allendale,MI,Public,24282,25049,16975.0,6374.0,29314,82100.0,81.0,1050.0,1230.0,21.0,26.0,www.gvsu.edu,42.9722455,-85.9536535,Michigan
+482,Florida Atlantic University,Boca Raton,FL,Public,30208,31454,10466.0,8635.0,35804,91200.0,60.0,1060.0,1220.0,21.0,26.0,www.fau.edu,26.3586885,-80.08309840000001,Florida
+483,Northwestern College (IA),Orange City,IA,Private,1131,1243,23064.0,19343.0,43650,82400.0,68.0,995.0,1235.0,21.0,27.0,www.nwciowa.edu,43.0072424,-96.0583138,Iowa
+484,Pacific University (OR),Forest Grove,OR,Private,1995,3893,29902.0,26103.0,57488,94000.0,84.0,1070.0,1260.0,22.0,27.0,www.pacificu.edu,45.5197452,-123.1114405,Oregon
+485,"University of North Carolina, Charlotte",Charlotte,NC,Public,26758,29317,16286.0,7385.0,37081,92600.0,66.0,1110.0,1270.0,22.0,26.0,www.uncc.edu,35.227208600000004,-80.84308270000001,North Carolina
+486,Tennessee Technological University,Cookeville,TN,Public,10215,10504,14813.0,9050.0,42377,95100.0,64.0,1010.0,1250.0,21.0,28.0,www.tntech.edu,36.1623886,-85.4997057,Tennessee
+487,Ball State University,Muncie,IN,Public,19231,22513,15187.0,10658.0,40448,83700.0,62.0,1080.0,1240.0,20.0,24.0,www.cms.bsu.edu,40.19368920000001,-85.3865271,Indiana
+488,Elmhurst College,Elmhurst,IL,Private,3122,3481,22443.0,21852.0,50000,88500.0,71.0,985.0,1210.0,20.0,26.0,www.elmhurst.edu,41.8994745,-87.9403418,Illinois
+489,Touro College,New York,NY,Private,8622,11908,23539.0,6815.0,35111,103100.0,74.0,,,,,www.touro.edu,40.7127281,-74.0060152,New York
+490,"CUNY, John Jay College of Criminal Justice",New York,NY,Public,14834,15583,3843.0,9007.0,41261,84800.0,39.0,980.0,1130.0,,,www.jjay.cuny.edu,40.7127281,-74.0060152,New York
+491,"CUNY, Lehman College",New York,NY,Public,14130,15231,1886.0,10685.0,34532,83500.0,35.0,970.0,1100.0,,,www.lehman.cuny.edu,40.7127281,-74.0060152,New York
+492,"California State University, East Bay",Hayward,CA,Public,14691,16538,11566.0,9402.0,36990,103500.0,74.0,,,,,www.csueastbay.edu,37.6688205,-122.08079640000001,California
+493,University of South Dakota,Vermillion,SD,Public,9416,10261,17344.0,5145.0,25521,87900.0,87.0,1010.0,1230.0,20.0,25.0,www.usd.edu,42.7795273,-96.929101,South Dakota
+494,"University of North Carolina, Asheville",Asheville,NC,Public,3852,4429,12763.0,8060.0,36638,76100.0,80.0,1080.0,1260.0,22.0,28.0,www.unca.edu,35.600949799999995,-82.5540161,North Carolina
+495,Ashland University,Ashland,OH,Private,6471,6781,20221.0,12432.0,33954,80000.0,74.0,965.0,1180.0,20.0,25.0,www.ashland.edu,40.86861470000001,-82.3175942,Ohio
+496,Simpson College (IA),Indianola,IA,Private,1479,1695,22005.0,25683.0,50180,88600.0,84.0,1070.0,1220.0,21.0,27.0,www.simpson.edu,41.3605271,-93.5599632,Iowa
+497,"University of Missouri, Saint Louis",St. Louis,MO,Public,16715,17095,9930.0,12471.0,40607,87500.0,76.0,1065.0,1225.0,22.0,27.0,www.umsl.edu,38.6264178,-90.1998378,Missouri
+498,Florida Southern College,Lakeland,FL,Private,2759,3055,24679.0,21189.0,49900,82500.0,51.0,1070.0,1250.0,24.0,29.0,www.flsouthern.edu,28.039465399999997,-81.9498042,Florida
+499,"California State University, Los Angeles",Los Angeles,CA,Public,24862,28531,3792.0,9553.0,36726,93800.0,46.0,890.0,1080.0,15.0,20.0,www.calstatela.edu,34.0536909,-118.24276599999999,California
+500,"California State University, San Bernardino",San Bernardino,CA,Public,19244,20692,8519.0,9287.0,36127,87500.0,57.0,910.0,1090.0,16.0,21.0,www.csusb.edu,34.8253019,-116.0833144,California
+501,"University of Texas, Arlington",Arlington,TX,Public,42966,46497,13200.0,8484.0,39860,99500.0,71.0,1060.0,1270.0,20.0,27.0,www.uta.edu,32.701939,-97.1056238,Texas
+502,"University of Northwestern, St. Paul",Saint Paul,MN,Private,3521,3702,23249.0,17134.0,43404,,93.0,970.0,1235.0,21.0,27.0,www.nwc.edu,44.9504037,-93.10150259999999,Minnesota
+503,Lawrence Technological University,Southfield,MI,Private,2268,3069,27331.0,17291.0,47482,108400.0,60.0,950.0,1330.0,21.0,28.0,www.ltu.edu,42.473368900000004,-83.2218731,Michigan
+504,Mississippi College,Clinton,MS,Private,3513,5036,16693.0,13649.0,32385,79500.0,39.0,1070.0,1290.0,22.0,29.0,www.mc.edu,32.3415342,-90.3217585,Mississippi
+505,University of North Georgia,Dahlonega,GA,Public,18782,20811,9854.0,5483.0,28094,85600.0,78.0,910.0,1130.0,20.0,25.0,www.ung.edu,34.5328484,-83.9845723,Georgia
+506,Webster University,St. Louis,MO,Private,3732,12736,22937.0,17927.0,44962,83500.0,54.0,1040.0,1253.0,21.0,26.0,www.webster.edu,38.6264178,-90.1998378,Missouri
+507,University of North Texas,Denton,TX,Public,35099,38276,13832.0,10638.0,33908,90100.0,72.0,1060.0,1260.0,21.0,27.0,www.unt.edu,33.1838787,-97.1413417,Texas
+508,Texas State University,San Marcos,TX,Public,37449,38666,15545.0,8129.0,34245,90600.0,73.0,1020.0,1200.0,20.0,26.0,www.txstate.edu,29.882643599999998,-97.9405828,Texas
+509,University of Maine,Orono,ME,Public,10304,11240,17074.0,8544.0,43618,95000.0,92.0,1050.0,1250.0,22.0,27.0,www.umaine.edu,44.883607,-68.672791,Maine
+510,Central College,Pella,IA,Private,1237,1433,22558.0,26389.0,50547,88800.0,70.0,950.0,1220.0,21.0,26.0,www.central.edu,41.4080534,-92.91630909999999,Iowa
+511,Christian Brothers University,Memphis,TN,Private,1919,2157,9468.0,23780.0,44430,96500.0,53.0,,,21.0,27.0,www.cbu.edu/admissions,35.1490215,-90.0516285,Tennessee
+512,Manhattanville College,Purchase,NY,Private,1802,2690,21923.0,26213.0,54780,97500.0,82.0,,,,,www.mville.edu,41.0409305,-73.71457459999999,New York
+513,Georgia State University,Atlanta,GA,Public,29773,32816,15506.0,10090.0,40873,90800.0,70.0,1040.0,1220.0,19.0,26.0,www.gsu.edu,33.7489924,-84.3902644,Georgia
+514,William Jewell College,Liberty,MO,Private,933,1082,21134.0,25621.0,47928,94500.0,48.0,990.0,1240.0,23.0,28.0,www.jewell.edu/home,39.246479,-94.41907900000001,Missouri
+515,Northern Arizona University,Flagstaff,AZ,Public,29609,31051,14789.0,10044.0,40705,90000.0,81.0,,,,,www.nau.edu,35.19875220000001,-111.6518229,Arizona
+516,Westminster College (PA),New Wilmington,PA,Private,1263,1289,21618.0,25476.0,49546,87700.0,72.0,990.0,1220.0,20.0,27.0,www.westminster.edu,41.1222812,-80.3328428,Pennsylvania
+517,Missouri State University,Springfield,MO,Public,22856,23697,15855.0,5480.0,28502,86800.0,84.0,1020.0,1245.0,21.0,26.0,www.missouristate.edu,37.2166779,-93.2920373,Missouri
+518,"University of Nebraska, Omaha",Omaha,NE,Public,14610,15731,13173.0,6485.0,34522,89500.0,87.0,840.0,1102.0,19.0,26.0,www.unomaha.edu,41.258745899999994,-95.93837579999999,Nebraska
+519,Florida Gulf Coast University,Fort Myers,FL,Public,14965,15317,15376.0,4726.0,39434,80000.0,64.0,1060.0,1210.0,21.0,25.0,www.fgcu.edu,26.640628000000003,-81.87230840000001,Florida
+520,Meredith College,Raleigh,NC,Private,1789,1980,24545.0,21258.0,49324,77100.0,69.0,1000.0,1195.0,20.0,25.0,www.meredith.edu,35.7803977,-78.63909890000001,North Carolina
+521,College of Idaho,Caldwell,ID,Private,954,999,21433.0,18125.0,41347,82100.0,76.0,,,,,www.collegeofidaho.edu,43.6678736,-116.68941559999999,Idaho
+522,Carroll University,Waukesha,WI,Private,3048,3452,22736.0,18551.0,44150,86500.0,71.0,975.0,1210.0,21.0,26.0,www.carrollu.edu,43.0116784,-88.2314813,Wisconsin
+523,Old Dominion University,Norfolk,VA,Public,22386,24375,15368.0,7270.0,43444,89900.0,86.0,980.0,1200.0,18.0,25.0,www.odu.edu,36.846292299999995,-76.2929252,Virginia
+524,Mount Saint Mary's University (CA),Los Angeles,CA,Private,3100,3226,28274.0,23270.0,59392,97500.0,81.0,920.0,1120.0,16.0,21.0,www.msmc.la.edu/index.asp,34.0536909,-118.24276599999999,California
+525,Andrews University,Berrien Springs,MI,Private,2250,3300,21460.0,16809.0,39714,85000.0,58.0,1040.0,1320.0,21.0,29.0,www.andrews.edu,41.9464336,-86.33889649999999,Michigan
+526,Lynn University,Boca Raton,FL,Private,2245,3010,35077.0,14306.0,55923,85000.0,85.0,,,,,www.lynn.edu,26.3586885,-80.08309840000001,Florida
+527,Baldwin Wallace University,Berea,OH,Private,3577,3791,23729.0,19781.0,46004,82800.0,78.0,,,,,www.bw.edu,41.3661614,-81.8543026,Ohio
+528,Otterbein University,Westerville,OH,Private,2608,2936,24287.0,20110.0,46390,85600.0,76.0,1040.0,1305.0,21.0,27.0,www.otterbein.edu,40.126139,-82.9295287,Ohio
+529,University of Massachusetts Boston,Boston,MA,Public,15848,16415,12412.0,11342.0,46941,95400.0,75.0,1040.0,1220.0,21.0,26.0,www.umb.edu,42.3602534,-71.0582912,Massachusetts
+530,Queens University of Charlotte,Charlotte,NC,Private,1906,2507,23348.0,22152.0,48776,86600.0,79.0,1010.0,1198.0,21.0,26.0,www.queens.edu,35.227208600000004,-80.84308270000001,North Carolina
+531,"Minnesota State University, Mankato",Mankato,MN,Public,14712,15273,15615.0,5108.0,28278,90900.0,61.0,,,20.0,24.0,www.mnsu.edu,44.163466299999996,-93.9993505,Minnesota
+532,Portland State University,Portland,OR,Public,26693,27483,13578.0,6772.0,43989,90500.0,92.0,990.0,1220.0,19.0,25.0,www.pdx.edu,45.5202471,-122.6741949,Oregon
+533,Westminster College (MO),Fulton,MO,Private,767,972,20402.0,18133.0,40510,,90.0,1015.0,1175.0,21.0,26.0,www.westminster-mo.edu,38.8467082,-91.94795859999999,Missouri
+534,University of Northern Colorado,Greeley,CO,Public,11278,13399,20367.0,7708.0,35653,87100.0,89.0,1000.0,1240.0,19.0,25.0,www.unco.edu,40.42331420000001,-104.7091322,Colorado
+535,Ripon College,Ripon,WI,Private,756,813,18592.0,28951.0,52341,89600.0,68.0,1040.0,1260.0,20.0,26.0,www.ripon.edu,43.8424502,-88.83729720000001,Wisconsin
+536,Marietta College,Marietta,OH,Private,1145,1220,24022.0,22617.0,50104,94300.0,67.0,960.0,1215.0,20.0,25.0,www.marietta.edu,39.416774200000006,-81.4548392,Ohio
+537,Sam Houston State University,Huntsville,TX,Public,19784,20938,13560.0,8976.0,31784,89900.0,74.0,1000.0,1140.0,19.0,23.0,www.shsu.edu,30.723526300000003,-95.55077709999999,Texas
+538,St. Mary's University (TX),San Antonio,TX,Private,2432,3649,17522.0,22029.0,44490,95300.0,80.0,1040.0,1230.0,20.0,26.0,www.stmarytx.edu,29.424600199999997,-98.4951405,Texas
+539,Illinois College,Jacksonville,IL,Private,959,987,16501.0,24557.0,42830,81700.0,55.0,,,,,www.ic.edu,39.7343037,-90.2288356,Illinois
+540,Central Washington University,Ellensburg,WA,Public,12901,15944,14382.0,7096.0,36708,93200.0,86.0,910.0,1100.0,17.0,24.0,www.cwu.edu,46.9970635,-120.5451223,Washington
+541,Doane University,Crete,NE,Private,1069,1072,24449.0,20109.0,46710,85300.0,65.0,,,20.0,25.0,www.doane.edu,40.628143,-96.961372,Nebraska
+542,University of Hartford,West Hartford,CT,Private,6259,6561,30440.0,21526.0,54662,101600.0,81.0,1030.0,1230.0,21.0,27.0,www.hartford.edu,41.762044700000004,-72.74203990000001,Connecticut
+543,Hood College,Frederick,MD,Private,1214,2112,23416.0,26864.0,54840,82600.0,81.0,,,,,www.hood.edu,39.4142186,-77.4109269,Maryland
+544,University of Colorado Colorado Springs,Colorado Springs,CO,Public,12932,14122,15872.0,5682.0,36298,90900.0,93.0,1040.0,1250.0,21.0,26.0,www.uccs.edu,38.8339578,-104.8253485,Colorado
+545,St. Catherine University,St. Paul,MN,Private,3747,4724,19935.0,26729.0,50716,82600.0,70.0,1040.0,1310.0,20.0,26.0,www.stkate.edu,44.9504037,-93.10150259999999,Minnesota
+546,Fairleigh Dickinson University,Teaneck,NJ,Private,6168,7846,16136.0,31560.0,56618,93000.0,88.0,1002.0,1200.0,20.0,25.0,view.fdu.edu/default.aspx?id=320,40.886016399999995,-74.0072568,New Jersey
+547,Millersville University,Millersville,PA,Public,7720,7915,22032.0,5668.0,38569,84700.0,79.0,970.0,1160.0,,,www.millersville.edu,39.997997999999995,-76.3545372,Pennsylvania
+548,"University of Nevada, Las Vegas",Las Vegas,NV,Public,27561,30471,10555.0,4998.0,37639,90400.0,81.0,1030.0,1240.0,19.0,24.0,www.unlv.edu,36.1672559,-115.1485163,Nevada
+549,Wisconsin Lutheran College,Milwaukee,WI,Private,1114,1198,20073.0,18027.0,41996,82500.0,90.0,1008.0,1278.0,20.0,26.0,www.wlc.edu,43.0349931,-87.92249699999999,Wisconsin
+550,Randolph College,Lynchburg,VA,Private,684,691,25614.0,26264.0,54225,,86.0,950.0,1190.0,19.0,25.0,www.randolphcollege.edu,37.4137536,-79.1422464,Virginia
+551,"CUNY, College of Staten Island",Staten Island,NY,Public,13594,15245,5687.0,7929.0,39124,94600.0,,,,,,www.csi.cuny.edu,40.5834557,-74.14960479999999,New York
+552,Vanguard University,Costa Mesa,CA,Private,2116,2394,21374.0,22396.0,46770,85600.0,47.0,930.0,1120.0,18.0,24.0,www.vanguard.edu,33.6633386,-117.90331699999999,California
+553,Immaculata University,Immaculata,PA,Private,1906,2481,31971.0,21301.0,45960,88100.0,83.0,950.0,1170.0,17.0,23.0,www.immaculata.edu,40.0308979,-75.5595448,Pennsylvania
+554,Lycoming College,Williamsport,PA,Private,1217,1404,19019.0,31000.0,53870,91000.0,64.0,988.0,1200.0,21.0,25.0,www.lycoming.edu,41.2493292,-77.0027671,Pennsylvania
+555,"University of Louisiana, Lafayette",Lafayette,LA,Public,17297,17556,12768.0,7899.0,38503,92500.0,51.0,820.0,1180.0,21.0,26.0,www.louisiana.edu,30.2240897,-92.0198427,Louisiana
+556,Huntington University,Huntington,IN,Private,1146,1321,21892.0,17623.0,37296,,81.0,950.0,1170.0,20.0,24.0,www.huntington.edu,40.8831011,-85.497476,Indiana
+557,Hollins University,Roanoke,VA,Private,674,790,19456.0,32492.0,54205,78000.0,48.0,1110.0,1295.0,23.0,28.0,www.hollins.edu/index.shtml,37.270973,-79.94143129999999,Virginia
+558,Benedictine University,Lisle,IL,Private,3731,5100,23827.0,18272.0,48016,89400.0,62.0,916.0,1100.0,19.0,25.0,www.ben.edu,41.801140999999994,-88.0747875,Illinois
+559,"University of North Carolina, Greensboro",Greensboro,NC,Public,18091,19922,12226.0,9017.0,35818,76600.0,78.0,1030.0,1180.0,20.0,25.0,www.uncg.edu,36.0726355,-79.79197540000001,North Carolina
+560,King's College (PA),Wilkes-Barre,PA,Private,2244,2469,25898.0,21560.0,52030,86500.0,71.0,,,,,www.kings.edu,41.2464824,-75.8817316,Pennsylvania
+561,Hastings College,Hastings,NE,Private,1202,1227,21703.0,19652.0,43527,87100.0,68.0,970.0,1150.0,20.0,25.0,www.hastings.edu,40.5861322,-98.3898883,Nebraska
+562,Georgia Southern University,Statesboro,GA,Public,20314,20418,16548.0,6648.0,33646,88000.0,68.0,1100.0,1230.0,22.0,26.0,www.georgiasouthern.edu,32.4490141,-81.78329120000001,Georgia
+563,Southern Illinois University Edwardsville,Edwardsville,IL,Public,13294,13796,15574.0,6756.0,37774,90100.0,90.0,980.0,1225.0,20.0,26.0,www.siue.edu,38.8114364,-89.95315699999999,Illinois
+564,Western Michigan University,Kalamazoo,MI,Public,19990,22869,16934.0,7894.0,27895,92200.0,82.0,960.0,1190.0,20.0,26.0,www.wmich.edu,42.291707,-85.5872286,Michigan
+565,Asbury University,Wilmore,KY,Private,1772,1990,28095.0,15833.0,40575,70800.0,70.0,980.0,1280.0,21.0,28.0,www.asbury.edu,37.8640406,-84.6601993,Kentucky
+566,Oakland University,Rochester,MI,Public,19321,19333,12779.0,9476.0,36581,93300.0,84.0,1010.0,1230.0,21.0,27.0,www.oakland.edu,42.680588,-83.1338214,Michigan
+567,University of New Mexico,Albuquerque,NM,Public,23124,26221,14315.0,6847.0,36736,94000.0,67.0,930.0,1170.0,19.0,25.0,www.unm.edu,35.0841034,-106.6509851,New Mexico
+568,Bloomsburg University of Pennsylvania,Bloomsburg,PA,Public,9260,9729,19725.0,5720.0,35750,92200.0,73.0,970.0,1150.0,19.0,24.0,www.bloomu.edu,41.0044958,-76.4537302,Pennsylvania
+569,Boise State University,Boise,ID,Public,23634,24121,13796.0,8258.0,37248,86400.0,84.0,940.0,1160.0,21.0,26.0,www.boisestate.edu,43.6166163,-116.20088600000001,Idaho
+570,College of the Atlantic,Bar Harbor,ME,Private,354,390,20234.0,37756.0,54969,,68.0,,,,,www.coa.edu/index.htm,44.3864565,-68.2118571,Maine
+571,"University of Texas, Rio Grande Valley",Edinburg,TX,Public,27807,27809,3901.0,9398.0,29995,81200.0,80.0,950.0,1120.0,17.0,22.0,www.utrgv.edu,26.3013982,-98.16245009999999,Texas
+572,Maryville College,Maryville,TN,Private,1181,1247,18146.0,27778.0,49266,75300.0,49.0,930.0,1150.0,20.0,27.0,www.maryvillecollege.edu,35.7564719,-83.9704593,Tennessee
+573,Oral Roberts University,Tulsa,OK,Private,3781,3919,19035.0,19393.0,41054,85100.0,93.0,990.0,1210.0,20.0,26.0,www.oru.edu,36.1556805,-95.9929113,Oklahoma
+574,"University of Alaska, Fairbanks",Fairbanks,AK,Public,7664,11866,9988.0,7457.0,32563,101800.0,77.0,1030.0,1270.0,17.0,25.0,www.alaska.edu,64.837845,-147.716675,Alaska
+575,Randolph-Macon College,Ashland,VA,Private,1453,1491,25621.0,25338.0,54180,,62.0,1050.0,1233.0,21.0,27.0,www.rmc.edu,37.759401200000006,-77.4806603,Virginia
+576,Montana Tech of the University of Montana,Butte,MT,Public,1909,2155,12993.0,6405.0,35755,112600.0,92.0,1115.0,1300.0,22.0,27.0,www.mtech.edu,46.0131505,-112.53650890000002,Montana
+577,"St. John's College, Santa Fe",Santa Fe,NM,Private,354,386,20605.0,31845.0,65456,,63.0,1190.0,1350.0,23.0,32.0,www.sjca.edu,35.68699960000001,-105.9377997,New Mexico
+578,"Indiana University-Purdue University, Indianapolis",Indianapolis,IN,Public,25516,29791,12021.0,11347.0,43022,88200.0,80.0,995.0,1190.0,19.0,26.0,www.iupui.edu,39.779801,-86.1394092,Indiana
+579,Hartwick College,Oneonta,NY,Private,1201,1435,26136.0,29494.0,57627,99200.0,89.0,920.0,1100.0,21.0,26.0,www.hartwick.edu,42.453492,-75.0629531,New York
+580,Alfred University,Alfred,NY,Private,2017,2354,22286.0,20676.0,43686,92000.0,63.0,990.0,1210.0,21.0,26.0,www.alfred.edu,42.2542334,-77.7906062,New York
+581,Oklahoma Baptist University,Shawnee,OK,Private,2056,2093,16267.0,18708.0,39840,76600.0,65.0,960.0,1150.0,20.0,26.0,www.okbu.edu,35.327292799999995,-96.92530040000001,Oklahoma
+582,Alma College,Alma,MI,Private,1426,1484,21836.0,28481.0,52475,89900.0,64.0,1030.0,1230.0,20.0,27.0,www.alma.edu,43.37892,-84.659727,Michigan
+583,Saint Cloud State University,St. Cloud,MN,Public,14975,15955,14633.0,5216.0,28920,91600.0,86.0,958.0,1188.0,18.0,24.0,www.stcloudstate.edu,45.5616075,-94.16420040000001,Minnesota
+584,Capital University,Columbus,OH,Private,3120,3384,20866.0,25272.0,48674,85100.0,69.0,1075.0,1245.0,22.0,27.0,www.capital.edu,39.9622601,-83.00070649999999,Ohio
+585,Liberty University,Lynchburg,VA,Private,60084,75044,27573.0,10400.0,38364,73600.0,30.0,1040.0,1240.0,21.0,27.0,www.liberty.edu,37.4137536,-79.1422464,Virginia
+586,Russell Sage College,Troy,NY,Private,1560,2525,19696.0,21706.0,45397,81100.0,56.0,,,,,www.sage.edu/rsc,40.740255700000006,-74.0055355,New York
+587,Converse College,Spartanburg,SC,Private,906,1478,21556.0,12497.0,34190,71000.0,71.0,970.0,1160.0,20.0,26.0,www.converse.edu,34.949800700000004,-81.9320157,South Carolina
+588,Oglethorpe University,Atlanta,GA,Private,1250,1589,22018.0,27532.0,53490,91400.0,58.0,1110.0,1310.0,22.0,28.0,www.oglethorpe.edu,33.7489924,-84.3902644,Georgia
+589,Central Michigan University,Mount Pleasant,MI,Public,20786,23257,15531.0,8624.0,35236,83600.0,68.0,1010.0,1200.0,20.0,27.0,www.cmich.edu,43.597646000000005,-84.7668495,Michigan
+590,"University of Wisconsin, Milwaukee",Milwaukee,WI,Public,24337,24988,16650.0,5647.0,35510,90300.0,72.0,,,20.0,25.0,www.uwm.edu,43.0349931,-87.92249699999999,Wisconsin
+591,Bowling Green State University,Bowling Green,OH,Public,16592,17357,19128.0,6542.0,32105,87500.0,73.0,990.0,1230.0,19.0,24.0,www.bgsu.edu,41.3747744,-83.65132290000001,Ohio
+592,Texas Woman's University,Denton,TX,Public,12020,15473,9493.0,8426.0,29683,83400.0,86.0,890.0,1080.0,17.0,23.0,www.twu.edu,33.1838787,-97.1413417,Texas
+593,University of Mount Union,Alliance,OH,Private,2195,2257,22786.0,17954.0,42725,88500.0,81.0,980.0,1200.0,20.0,25.0,www.mountunion.edu,40.915336200000006,-81.1059309,Ohio
+594,Clarke University,Dubuque,IA,Private,845,1039,24334.0,17474.0,45900,80200.0,63.0,970.0,1148.0,20.0,25.0,www.clarke.edu,42.5006217,-90.66479670000001,Iowa
+595,Carthage College,Kenosha,WI,Private,2860,2940,26532.0,26379.0,57250,85400.0,68.0,1040.0,1300.0,21.0,27.0,www.carthage.edu,42.584677299999996,-87.82122629999999,Wisconsin
+596,Centenary College of Louisiana,Shreveport,LA,Private,501,588,24704.0,26633.0,53000,88400.0,62.0,1030.0,1210.0,22.0,28.0,www.centenary.edu,32.522182799999996,-93.7651944,Louisiana
+597,Wichita State University,Wichita,KS,Public,12704,15075,14113.0,5793.0,32716,87300.0,94.0,1000.0,1275.0,20.0,27.0,www.wichita.edu,37.6922361,-97.3375448,Kansas
+598,Aurora University,Aurora,IL,Private,4248,5833,17220.0,15909.0,37028,83400.0,87.0,950.0,1130.0,19.0,23.0,www.aurora.edu,41.7571701,-88.31475390000001,Illinois
+599,Georgetown College (KY),Georgetown,KY,Private,1051,1767,20769.0,29107.0,50086,81900.0,67.0,,,20.0,26.0,www.georgetowncollege.edu,38.2097967,-84.55883109999999,Kentucky
+600,Western Kentucky University,Bowling Green,KY,Public,20257,21431,11850.0,7295.0,36806,83100.0,95.0,970.0,1180.0,19.0,27.0,www.wku.edu,36.990319899999996,-86.4436018,Kentucky
+601,Wayne State University,Detroit,MI,Public,20314,27064,12970.0,9682.0,40763,91700.0,67.0,1000.0,1210.0,21.0,28.0,www.wayne.edu,42.331550899999996,-83.04664029999999,Michigan
+602,Western Colorado University,Gunnison,CO,Public,2814,3343,17229.0,6195.0,35144,81500.0,86.0,990.0,1200.0,20.0,25.0,www.western.edu,38.64767020000001,-107.06031259999999,Colorado
+603,Rhode Island College,Providence,RI,Public,8171,8318,10366.0,6877.0,35465,83500.0,74.0,880.0,1090.0,15.0,22.0,www.ric.edu,41.8239891,-71.4128343,Rhode Island
+604,Weber State University,Ogden,UT,Public,27949,32248,12061.0,4579.0,29912,94000.0,,,,,,www.weber.edu,41.2230048,-111.9738429,Utah
+605,Salem College,Winston-Salem,NC,Private,968,984,17669.0,25354.0,46080,73700.0,57.0,1020.0,1300.0,23.0,29.0,www.salem.edu,36.0998131,-80.2440518,North Carolina
+606,"University of Texas, El Paso",El Paso,TX,Public,24386,25078,8135.0,9183.0,36955,92100.0,100.0,920.0,1130.0,16.0,22.0,www.utep.edu,31.7754152,-106.464634,Texas
+607,Spring Hill College,Mobile,AL,Private,1442,1485,21108.0,29825.0,55168,,46.0,1025.0,1185.0,21.0,26.0,www.shc.edu,30.6943566,-88.04305409999999,Alabama
+608,Sweet Briar College,Sweet Briar,VA,Private,323,406,21291.0,30802.0,54155,79700.0,93.0,993.0,1180.0,20.0,28.0,www.sbc.edu,38.1352892,-79.0626247,Virginia
+609,University of Toledo,Toledo,OH,Public,18077,20579,13832.0,8050.0,34375,92500.0,94.0,1020.0,1240.0,20.0,26.0,www.utoledo.edu,41.6529143,-83.5378173,Ohio
+610,University of Montana,Missoula,MT,Public,11671,11865,15006.0,5404.0,38356,87800.0,93.0,1060.0,1270.0,21.0,26.0,www.umt.edu,46.8701049,-113.9952672,Montana
+611,Southeastern Louisiana University,Hammond,LA,Public,14285,16512,12739.0,7250.0,34155,83900.0,88.0,,,19.0,24.0,www.selu.edu,30.5043583,-90.4611995,Louisiana
+612,University of South Alabama,Mobile,AL,Public,12848,15569,14237.0,6927.0,28210,86400.0,82.0,1010.0,1200.0,20.0,26.0,www.southalabama.edu,30.6943566,-88.04305409999999,Alabama
+613,Murray State University,Murray,KY,Public,9916,10012,11497.0,8426.0,37870,79900.0,87.0,980.0,1190.0,21.0,27.0,www.murraystate.edu,36.610333399999995,-88.314761,Kentucky
+614,Anderson University (IN),Anderson,IN,Private,1877,1961,23799.0,17790.0,43450,78600.0,65.0,910.0,1110.0,19.0,25.0,anderson.edu,40.1053196,-85.6802541,Indiana
+615,University of West Florida,Pensacola,FL,Public,12449,13040,10729.0,5222.0,31895,81700.0,50.0,1080.0,1240.0,22.0,27.0,www.uwf.edu,30.421309,-87.2169149,Florida
+616,University of New Orleans,New Orleans,LA,Public,7964,8082,11135.0,8151.0,28568,91600.0,57.0,1030.0,1250.0,20.0,25.0,www.uno.edu,29.949932300000004,-90.0701156,Louisiana
+617,Indiana University of Pennsylvania,Indiana,PA,Public,12003,12431,20940.0,6772.0,32461,85900.0,91.0,910.0,1120.0,17.0,23.0,www.iup.edu,40.621455100000006,-79.1525349,Pennsylvania
+618,North Greenville University,Tigerville,SC,Private,2356,2565,26450.0,15812.0,36000,,61.0,930.0,1270.0,19.0,28.0,www.ngu.edu,35.0684492,-82.36845090000001,South Carolina
+619,University of Texas at San Antonio,San Antonio,TX,Public,27880,30768,12745.0,8177.0,34484,87500.0,79.0,1030.0,1210.0,20.0,25.0,www.utsa.edu,29.424600199999997,-98.4951405,Texas
+620,Millikin University,Decatur,IL,Private,2040,2132,20435.0,23312.0,47664,83400.0,65.0,1080.0,1260.0,19.0,26.0,www.millikin.edu/Pages/default.aspx,39.8454163,-88.9524151,Illinois
+621,Northern Illinois University,DeKalb,IL,Public,15429,18045,19786.0,9482.0,38314,95500.0,53.0,,,19.0,24.0,www.niu.edu/index.shtml,41.89034470000001,-88.7713953,Illinois
+622,Cleveland State University,Cleveland,OH,Public,14594,16371,16582.0,7096.0,30825,88600.0,90.0,990.0,1210.0,19.0,25.0,www.csuohio.edu,41.5051613,-81.6934446,Ohio
+623,Humboldt State University,Arcata,CA,Public,8525,8602,14490.0,9038.0,36601,89000.0,82.0,960.0,1160.0,18.0,24.0,www.humboldt.edu,40.866517,-124.08283999999999,California
+624,Monmouth College,Monmouth,IL,Private,1033,1205,17190.0,27809.0,47970,88100.0,67.0,900.0,1090.0,20.0,25.0,www.monmouthcollege.edu,40.91271029999999,-90.64724770000001,Illinois
+625,St. Francis College,Brooklyn,NY,Private,2362,2745,9560.0,15533.0,44488,93200.0,63.0,950.0,1120.0,20.0,24.0,www.sfc.edu,40.650102399999994,-73.9495829,New York
+626,Elmira College,Elmira,NY,Private,1012,1135,26255.0,26883.0,55050,82200.0,85.0,,,,,www.elmira.edu,42.089796500000006,-76.8077338,New York
+627,University of Southern Mississippi,Hattiesburg,MS,Public,13606,14478,13178.0,9292.0,24883,83900.0,98.0,,,19.0,26.0,www.home.usm.edu,31.327118900000002,-89.2903392,Mississippi
+628,Lyon College,Batesville,AR,Private,672,705,18605.0,18534.0,39120,,64.0,1030.0,1234.0,22.0,28.0,www.lyon.edu,35.769799,-91.64097220000001,Arkansas
+629,Southern Illinois University Carbondale,Carbondale,IL,Public,13518,14554,17175.0,10924.0,42770,90900.0,76.0,920.0,1330.0,20.0,26.0,www.siu.edu,37.7274692,-89.216655,Illinois
+630,Kent State University Kent Campus,Kent,OH,Public,27376,28972,18432.0,7306.0,34046,83100.0,88.0,1040.0,1220.0,21.0,25.0,www.kent.edu,41.1536674,-81.357886,Ohio
+631,Middle Tennessee State University,Murfreesboro,TN,Public,21913,23050,12416.0,8607.0,40458,81100.0,59.0,990.0,1210.0,20.0,25.0,www.mtsu.edu,35.845999,-86.3920452,Tennessee
+632,Warren Wilson College,Asheville,NC,Private,661,695,25117.0,19414.0,49744,74600.0,79.0,1140.0,1285.0,25.0,29.0,www.warren-wilson.edu/external_index.php,35.600949799999995,-82.5540161,North Carolina
+633,Northern Kentucky University,Highland Heights,KY,Public,14141,14456,9131.0,8295.0,32136,87400.0,90.0,993.0,1210.0,20.0,26.0,www.nku.edu,39.033090200000004,-84.4521512,Kentucky
+634,Western Illinois University,Macomb,IL,Public,9441,9656,15844.0,9239.0,25835,85900.0,60.0,,,18.0,23.0,www.wiu.edu,40.4588934,-90.6713939,Illinois
+635,"University of Alaska, Anchorage",Anchorage,AK,Public,15733,23824,13378.0,6207.0,39902,101000.0,83.0,,,,,www.uaa.alaska.edu,61.2163129,-149.89485200000001,Alaska
+636,Fort Lewis College,Durango,CO,Public,3332,3925,17705.0,10850.0,36843,82600.0,83.0,1020.0,1210.0,20.0,25.0,www.fortlewis.edu,37.2713951,-107.8815978,Colorado
+637,Marlboro College,Marlboro,VT,Private,185,390,17636.0,33054.0,55625,,97.0,,,,,www.marlboro.edu,42.859526,-72.72592709999999,Vermont
+638,Wright State University,Dayton,OH,Public,14332,15957,16249.0,6546.0,32506,87800.0,97.0,980.0,1270.0,19.0,25.0,www.wright.edu,39.758947799999994,-84.1916069,Ohio
+639,Hiram College,Hiram,OH,Private,1200,1221,21474.0,23318.0,47757,84100.0,64.0,940.0,1200.0,18.0,24.0,www.hiram.edu,41.312554999999996,-81.14371,Ohio
+640,University of Memphis,Memphis,TN,Public,19875,21521,13921.0,8960.0,36372,85800.0,85.0,1010.0,1230.0,19.0,25.0,www.mephis.edu,35.1490215,-90.0516285,Tennessee
+641,Eastern Kentucky University,Richmond,KY,Public,16155,16612,11892.0,8234.0,31978,80700.0,87.0,960.0,1130.0,20.0,25.0,www.eku.edu,37.747857200000006,-84.29465390000001,Kentucky
+642,Fisk University,Nashville,TN,Private,701,738,28362.0,9396.0,37070,83600.0,45.0,940.0,1260.0,16.0,22.0,www.fisk.edu/Home.aspx,36.1622296,-86.7743531,Tennessee
+643,Guilford College,Greensboro,NC,Private,1680,2050,23560.0,22964.0,50813,75600.0,91.0,,,,,www.guilford.edu,36.0726355,-79.79197540000001,North Carolina
+644,Carson-Newman University,Jefferson City,TN,Private,1934,2514,18003.0,20126.0,40640,76500.0,67.0,940.0,1150.0,20.0,26.0,www.cn.edu,36.122310999999996,-83.4923961,Tennessee
+645,Morehouse College,Atlanta,GA,Private,2202,2219,34928.0,17318.0,48723,98700.0,74.0,950.0,1160.0,18.0,23.0,www.morehouse.edu,33.7489924,-84.3902644,Georgia
+646,New Mexico State University,Las Cruces,NM,Public,13379,14432,8625.0,9582.0,34720,96700.0,64.0,910.0,1160.0,18.0,23.0,www.nmsu.edu,32.3140354,-106.7798078,New Mexico
+647,Indiana State University,Terre Haute,IN,Public,13626,13763,13012.0,9297.0,32938,85600.0,85.0,900.0,1110.0,17.0,23.0,www.indstate.edu,39.466702500000004,-87.4139119,Indiana
+648,Emory &amp; Henry College,Emory,VA,Private,1094,1226,19340.0,27155.0,48100,70700.0,72.0,988.0,1170.0,19.0,25.0,www.ehc.edu,36.7728907,-81.8362343,Virginia
+649,Wells College,Aurora,NY,Private,488,516,22828.0,30207.0,55180,,80.0,,,,,www.wells.edu,42.7338407,-78.6377068,New York
+650,Catawba College,Salisbury,NC,Private,1336,1463,19807.0,23662.0,44921,78100.0,42.0,930.0,1100.0,18.0,23.0,www.catawba.edu,35.6709727,-80.4742261,North Carolina

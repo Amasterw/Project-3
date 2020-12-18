@@ -37,10 +37,10 @@ var layers = {
   //PRIVATE_FORPROFIT: new L.LayerGroup()
 };
 
-var maxBounds = [
-  [5.499550, -167.276413], //Southwest
-  [83.162102, -52.233040]  //Northeast
-];
+// var maxBounds = [
+//   [5.499550, -167.276413], //Southwest
+//   [83.162102, -52.233040]  //Northeast
+// ];
 
 
 
@@ -48,7 +48,7 @@ var maxBounds = [
 var map = L.map("map-id", {
   center: [39.8, -98.5],
   //setView:[39.8, -98.5]
-  zoom: 16,
+  zoom: 4,
   layers: [
     layers.PUBLIC,
     layers.PRIVATE
@@ -56,8 +56,8 @@ var map = L.map("map-id", {
     //layers.PRIVATE_FORPROFIT
   ]
 });
-map.setMaxBounds(maxBounds);
-map.fitBounds(maxBounds);
+// map.setMaxBounds(maxBounds);
+// map.fitBounds(maxBounds);
 
 // Add our 'lightmap' tile layer to the map
 base.addTo(map);
@@ -353,11 +353,15 @@ checkboxes_t.forEach(function(checkbox) {
 
     // Call the updateLegend function, which will... update the legend!
     updateLegend(typeCount);
-    build_svgmap(data,enabledType,enabledSettings)
 //     var button=d3.select("#form");
 // console.log(button);
-document.querySelector('button').onclick=function(){update()};
-function update(){
+var temp_marker=[];
+document.querySelector('button').onclick=function(){update(map,temp_marker)};
+function update(map,temp_marker){
+    console.log(temp_marker);
+    for(var i=0;i<temp_marker.length;i++){
+        map.remove(temp_marker[i]);
+    }
   map.removeLayer(layers['PUBLIC']);
   map.removeLayer(layers['PRIVATE']);
   console.log(data.length);
@@ -429,7 +433,25 @@ function update(){
 
     // Initialize a stationStatusCode, which will be used as a key to access the appropriate layers, icons, and station count for layer group
   var typeCode;
-  
+  console.log(state_data.length);
+  console.log(state_data[2].properties['Public/Private']);
+  console.log(layers);
+
+//   if(map.hasLayer(layers)){
+//     map.removeLayer(layers['PUBLIC']);
+//       map.removeLayer(layers['PRIVATE']);
+//     //map.removeLayer(DistrictLayer);
+//     //map.addLayer(DistrictLayer);
+//     map.addLayer(layers['PUBLIC']);
+//   map.addLayer(layers['PRIVATE']);
+//     //map.fitBounds(DistrictLayer.getBounds());
+// }
+// else{
+//     // map.addLayer(DistrictLayer);
+//     // map.fitBounds(DistrictLayer.getBounds());
+//     map.addLayer(layers['PUBLIC']);
+//   map.addLayer(layers['PRIVATE']);
+// }
 
 console.log(layers);
 
@@ -451,7 +473,7 @@ console.log(layers);
     
   
 
-      
+    
     typeCount[typeCode]++;
     console.log(typeCount);
       // Create a new marker with the appropriate icon and coordinates
@@ -461,7 +483,8 @@ console.log(layers);
       //console.log(geometry.x);
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
-    newMarker.addTo(layers[typeCode]);
+    //newMarker.addTo(layers[typeCode]);
+    temp_marker.push(newMarker);
     newMarker.addTo(map);
     console.log(newMarker);
     
@@ -474,7 +497,7 @@ console.log(layers);
   }
   //map.addLayer(layers['PUBLIC']);
   updateLegend(typeCount);
-  build_svgmap(data,enabledType,enabledSettings)
+  return temp_marker;
 
 
 
@@ -498,487 +521,4 @@ function updateLegend(typeCount) {
     // "<p class='empty'>PRIVATE FOR-PROFIT: " + typeCount.PRIVATE_FORPROFIT + "</p>"
   ].join("");
 }
-
-function build_svgmap(prop_data,enabledType,enabledSettings) {
-
-  var svgArea = d3.select("body").select("svg");
-
-  // Clear SVG is Not Empty
-  if (!svgArea.empty()) {
-    svgArea.remove();
-  }
-  
-  
-  
-  var svgWidth = 1000;
-  var svgHeight = 600;
-
-  // Set SVG Margins
-  var margin = {
-    top: 20,
-    right: 40,
-    bottom: 90,
-    left: 100
-  };
-
-  // Define Dimensions of the Chart Area
-  var width = svgWidth - margin.left - margin.right;
-  var height = svgHeight - margin.top - margin.bottom;
-
-  // If SVG Area is not Empty When Browser Loads, Remove & Replace with a Resized Version of Chart
-
-  var svgArea = d3.select("#svg1")
-                  .append("svg")
-                  .attr("width",svgWidth )
-                  .attr("height", svgHeight);
-
-  var chartGroup = svgArea.append("g")
-                          .attr("transform",`translate(${margin.left}, ${margin.top})`)
-                          .attr("class","svg-class");
-
-  console.log(chartGroup);
-
-  //Initial params
-  var chosenXAxis='Acceptance Rate'
-  var chosenYAxis = "Sat Upper";
-
-  // create xscale and yscale
-  function xScale(state_data, chosenXAxis){
-    
-    
-    //create scale function for the chart
-    var xLinearScale = d3.scaleLinear()
-      .domain([d3.min(state_data, d => d[chosenXAxis]) ,
-        d3.max(state_data, d => d[chosenXAxis]) * 1.2
-      ])
-      .range([0, width]);
-      console.log(xLinearScale);
-    return xLinearScale;
-  }
-  
-
-
-  //yScale
-
-  function yScale(state_data, chosenYAxis){
-    console.log(enabledType);
-    //var properties = svg_data.properties;
-    //create scale function for the chart
-    var yLinearScale = d3.scaleLinear()
-      .domain([d3.min(state_data, d => d[chosenYAxis]) ,
-        d3.max(state_data, d => d[chosenYAxis]) 
-      ])
-      .range([height, 0]);
-    return yLinearScale;
-  }
-  // var sc=yScale(state_data,chosenYAxis);
-  // console.log(sc);
-  // Function for Updating xAxis Upon Click on Axis Label
-function renderXAxes(newXScale, xAxis) {
-  var bottomAxis = d3.axisBottom(newXScale);
-  xAxis.transition()
-    .duration(1000)
-    .call(bottomAxis);
-    console.log(xAxis);
-  return xAxis;
-}
-// Function for Updating yAxis Upon Click on Axis Label
-function renderYAxes(newYScale, yAxis) {
-  var leftAxis = d3.axisLeft(newYScale);
-  yAxis.transition()
-    .duration(1000)
-    .call(leftAxis);
-    console.log(yAxis);
-  return yAxis;
-}
-
-// Function for Updating Circles Group with a Transition to New Circles
-function renderCircles(circlesGroup, newXScale, chosenXAxis, newYScale, chosenYAxis) {
-  console.log(circlesGroup, newXScale, chosenXAxis, newYScale, chosenYAxis);
-
-  circlesGroup.transition()
-    .duration(1000)
-    .attr("cx", d => newXScale(d[chosenXAxis]))
-    .attr("cy", d => newYScale(d[chosenYAxis]));
-    console.log(circlesGroup);
-  return circlesGroup;
-}
-
-// Function for Updating Circles Group with New Tooltip
-function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
-
-  if (chosenXAxis === "Acceptance Rate") {
-    var xLabel = "Acceptance Rate";
-  }
-  else  {
-    var xLabel = "Alumni Salary";
-  }
-  
-  if (chosenYAxis === "SAT Upper") {
-    var yLabel = "SAT Score";
-  }
-  else if (chosenYAxis === "ACT Upper") {
-    var yLabel = "ACT Score)";
-  }
-  else if (chosenYAxis === "Net Price") {
-    var yLabel = "Net Price";
-  }
-  else {
-    var yLabel = "Student Population";
-  }
-
-  // Initialize Tool Tip
-  var toolTip = d3.tip()
-    .attr("class", "tooltip d3-tip")
-    .offset([90, 90])
-    .html(function(d) {
-      return (`<strong>${d.name}<br>${d.State}</strong><br>${xLabel} ${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}`);
-    });
-
-    // Create Circles Tooltip in the Chart
-    circlesGroup.call(toolTip);
-    // Create Event Listeners to Display and Hide the Circles Tooltip
-    circlesGroup.on("mouseover", function(data) {/////////////////////////if not working replace data with state_data
-      toolTip.show(data, this);
-    })
-    // onmouseout Event
-    .on("mouseout", function(data) {
-      toolTip.hide(data);
-    });
-  // Create Text Tooltip in the Chart
-  //textGroup.call(toolTip);
-  // Create Event Listeners to Display and Hide the Text Tooltip
-  // textGroup.on("mouseover", function(data) {
-  //   toolTip.show(data, this);
-  // })
-  //   // onmouseout Event
-  //   .on("mouseout", function(data) {
-  //     toolTip.hide(data);
-  //   });
-  // return circlesGroup;
-}
-
-
-d3.csv("static/data/plotting.csv", function(plot_data){
-  console.log(plot_data);
-  plot_data.forEach(function(data){
-    data['Net Price'] = +data['Net Price'];
-    data['Student Population'] = +data['Student Population'];
-    data['Total Annual Cost'] = +data['Total Annual Cost'];
-    data['Alumni Salary'] = +data['Alumni Salary'];
-    data['Acceptance Rate'] = +data['Acceptance Rate'];
-    data['SAT Upper'] = +data['SAT Upper'];
-    data['ACT Upper'] = +data['ACT Upper'];
-    
-  })
-  //console.log(data.properties);
-
-
-var rank=[],name=[],city=[],state=[],sat_l=[],sat_u=[],act_l=[],act_u=[],stu_pop=[],alumni_sal=[],annual_cost=[];
-var sat=[],act=[],accept_rate=[];
-type_data=[];
-state_data=[];
-console.log(enabledType);
-if(enabledType.length == 0){
-  enabledType=["Public","Private"];
-
-}
-console.log(enabledType);
-
-for (var i=0;i<plot_data.length;i++){
-
-  for (var j=0;j<enabledType.length;j++){
-    //console.log(enabledType[j]);
-    if(plot_data[i]['Public/Private'] === enabledType[j]){
-      //console.log(data[i]);
-
-      type_data.push(plot_data[i]);
-    }
-  }
-}
-console.log(type_data)
-// for(var j=0;j<enabledSettings.length;j++){
-  
-//     var filteredData = data.filter(data => data.properties.State === enabledSettings);
-//     new_data.push(filteredData);
-  
-// }
-console.log(enabledSettings);
-if(enabledSettings.length == 0){
-  var state=[];
-for(var i=0;i<data.length;i++){
-  //var properties=data[i].properties;
-  // var t=data[i].properties['Public/Private'];
-  // type.push(t);
-  //var type=data[i].properties.map(entry=>entry['Public/Private']);
-  //console.log(t);
-  var s=data[i].properties.State;
-  state.push(s);
-  //var uniqueCountry=[...new Set(dupCountry)];
-
-}
-var state_f=[...new Set(state)];
-enabledSettings=state_f;
-
-}
-console.log(enabledSettings);
-
-for (var i=0;i<type_data.length;i++){
-  for (var j=0;j<enabledSettings.length;j++){
-    if(type_data[i].Code == enabledSettings[j]){
-      state_data.push(type_data[i]);
-    }
-  }
-}
-console.log(state_data);
-
-// Create xLinearScale & yLinearScale Functions for the Chart
-var xLinearScale = xScale(state_data, chosenXAxis);
-//console.log(xLinearScale);
-var yLinearScale = yScale(state_data, chosenYAxis);
-
-
-// Create Axis Functions for the Chart
-var bottomAxis = d3.axisBottom(xLinearScale);
-var leftAxis = d3.axisLeft(yLinearScale);
-
-
-// Append xAxis to the Chart
-var xAxis = chartGroup.append("g")
-.classed("x-axis", true)
-.attr("transform", `translate(0, ${height})`)
-.call(bottomAxis);
-console.log(xAxis);
-
-// Append yAxis to the Chart
-var yAxis = chartGroup.append("g")
-.classed("y-axis", true)
-.call(leftAxis);
-console.log(yAxis);
-
-
-// Create & Append Initial Circles
-var circlesGroup = chartGroup.selectAll(".stateCircle")
-.data(state_data)
-.enter()
-.append("circle")
-.attr("cx", d => xLinearScale(d[chosenXAxis]))
-.attr("cy", d => yLinearScale(d[chosenYAxis]))
-.attr("class", "stateCircle")
-.attr("r", 15)
-.attr("opacity", ".75");
-
-
-// Create Group for 2 xAxis Labels
-var xLabelsGroup = chartGroup.append("g")
-.attr("transform", `translate(${width / 2}, ${height + 20})`);
-// Append xAxis
-var acceptanceLabel = xLabelsGroup.append("text")
-.attr("x", 0)
-.attr("y", 20)
-.attr("value", "AccepTance Rate") // Value to Grab for Event Listener
-.classed("active", true)
-.text("Acceptance Rate");
-
-var alumni_salLabel = xLabelsGroup.append("text")
-.attr("x", 0)
-.attr("y", 40)
-.attr("value", "Alumni Salary") // Value to Grab for Event Listener
-.classed("inactive", true)
-.text("Alumni Salary");
-
-
-
-// Create Group for 4 yAxis Labels
-var yLabelsGroup = chartGroup.append("g")
-.attr("transform", `translate(-25, ${height / 2})`);
-// Append yAxis
-var satLabel = yLabelsGroup.append("text")
-.attr("transform", "rotate(-90)")
-.attr("y", -20)
-.attr("x", 0)
-.attr("value", "SAT Upper")
-.attr("dy", "1em")
-.classed("axis-text", true)
-.classed("active", true)
-.text("SAT Score");
-
-var actLabel = yLabelsGroup.append("text") 
-.attr("transform", "rotate(-90)")
-.attr("y", -40)
-.attr("x", 0)
-.attr("value", "ACT Upper")
-.attr("dy", "1em")
-.classed("axis-text", true)
-.classed("inactive", true)
-.text("ACT Score");
-
-var net_priceLabel = yLabelsGroup.append("text")
-.attr("transform", "rotate(-90)")
-.attr("y", -60)
-.attr("x", 0)
-.attr("value", "Net Price")
-.attr("dy", "1em")
-.classed("axis-text", true)
-.classed("inactive", true)
-.text("Net Price");
-
-var stu_popuLabel = yLabelsGroup.append("text")
-.attr("transform", "rotate(-90)")
-.attr("y", -80)
-.attr("x", 0)
-.attr("value", "Student Population")
-.attr("dy", "1em")
-.classed("axis-text", true)
-.classed("inactive", true)
-.text("Student Population");
-console.log(stu_popuLabel);
-
-// updateToolTip Function
-var circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
-console.log(circlesGroup);
-
-
-// xAxis Labels Event Listener
-xLabelsGroup.selectAll("text")
-.on("click", function() {
-  // Get Value of Selection
-  var value = d3.select(this).attr("value");
-  
-  console.log(value);
-  if (value !== chosenXAxis) {
-    // Replaces chosenXAxis with Value
-    chosenXAxis = value;
-    // Updates xScale for New Data
-    xLinearScale = xScale(state_data, chosenXAxis);
-    // Updates xAxis with Transition
-    xAxis = renderXAxes(xLinearScale, xAxis);
-    // Updates Circles with New Values
-    circlesGroup = renderCircles(circlesGroup, xLinearScale, chosenXAxis, yLinearScale, chosenYAxis);
-    
-    // Updates Tooltips with New Information
-    circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
-    // Changes Classes to Change Bold Text
-    if (chosenXAxis === "Acceptance Rate") {
-      acceptanceLabel
-        .classed("active", true)
-        .classed("inactive", false);
-        alumni_salLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      
-    }
-    else {
-      acceptanceLabel
-        .classed("active", false)
-        .classed("inactive", true);
-        alumni_salLabel
-        .classed("active", true)
-        .classed("inactive", false);
-    }
-  }
-});
-
-// yAxis Labels Event Listener
-yLabelsGroup.selectAll("text")
-.on("click", function() {
-  // Get Value of Selection
-  var value = d3.select(this).attr("value");
-  if (value !== chosenYAxis) {
-    // Replaces chosenYAxis with Value
-    chosenYAxis = value;
-    // Updates yScale for New Data
-    yLinearScale = yScale(state_data, chosenYAxis);
-    // Updates yAxis with Transition
-    yAxis = renderYAxes(yLinearScale, yAxis);
-    // Updates Circles with New Values
-    circlesGroup = renderCircles(circlesGroup, xLinearScale, chosenXAxis, yLinearScale, chosenYAxis);
-    
-    // Updates Tooltips with New Information
-    circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
-    // Changes Classes to Change Bold Text
-    if (chosenYAxis === "SAT Upper") {
-      satLabel
-        .classed("active", true)
-        .classed("inactive", false);
-      actLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      net_priceLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      stu_popuLabel
-        .classed("active", false)
-        .classed("inactive", true);
-    }
-    else if (chosenYAxis === "actLabel") {
-      satLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      actLabel
-        .classed("active", true)
-        .classed("inactive", false);
-      net_priceLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      stu_popuLabel
-        .classed("active", false)
-        .classed("inactive", true);
-    }
-    else if (chosenYAxis === "net_priceLabel") {
-      satLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      actLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      net_priceLabel
-        .classed("active", true)
-        .classed("inactive", false);
-      stu_popuLabel
-        .classed("active", false)
-        .classed("inactive", true);
-    }
-    else {
-      satLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      actLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      net_priceLabel
-        .classed("active", false)
-        .classed("inactive", true);
-      stu_popuLabel
-        .classed("active", true)
-        .classed("inactive", false);
-    }
-  }
-});
-});
-}
-
-
-
-
-
-
-
-
-  
- 
-  // Clear SVG is Not Empty
-// if (!svgArea.empty()) {
-//   svgArea.remove();
-// }
-
-
-
-
-
-
-  })
-
-
-
-
+})
