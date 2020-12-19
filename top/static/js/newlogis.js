@@ -479,9 +479,9 @@ console.log(layers);
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
     newMarker.addTo(layers[typeCode]);
-    newMarker.addTo(map);
+    //newMarker.addTo(map);
     console.log(newMarker);
-    
+    newMarker.addTo(layers[typeCode]);
 
       //console.log(properties.Name);
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML

@@ -353,7 +353,7 @@ checkboxes_t.forEach(function(checkbox) {
 
     // Call the updateLegend function, which will... update the legend!
     updateLegend(typeCount);
-    build_svgmap(data,enabledType,enabledSettings)
+    build_svgmap(enabledType,enabledSettings)
 //     var button=d3.select("#form");
 // console.log(button);
 document.querySelector('button').onclick=function(){update()};
@@ -474,7 +474,8 @@ console.log(layers);
   }
   //map.addLayer(layers['PUBLIC']);
   updateLegend(typeCount);
-  build_svgmap(data,enabledType,enabledSettings)
+  console.log(enabledType,enabledSettings);
+  build_svgmap(enabledType,enabledSettings);
 
 
 
@@ -499,9 +500,11 @@ function updateLegend(typeCount) {
   ].join("");
 }
 
-function build_svgmap(prop_data,enabledType,enabledSettings) {
+function build_svgmap(enabledType,enabledSettings) {
+  console.log(enabledType,'\n',enabledSettings)
 
   var svgArea = d3.select("body").select("svg");
+  console.log(svgArea);
 
   // Clear SVG is Not Empty
   if (!svgArea.empty()) {
@@ -540,7 +543,7 @@ function build_svgmap(prop_data,enabledType,enabledSettings) {
 
   //Initial params
   var chosenXAxis='Acceptance Rate'
-  var chosenYAxis = "Sat Upper";
+  var chosenYAxis = "SAT Upper";
 
   // create xscale and yscale
   function xScale(state_data, chosenXAxis){
@@ -631,7 +634,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
   else if (chosenYAxis === "Net Price") {
     var yLabel = "Net Price";
   }
-  else {
+  else if (chosenYAxis === "Student Population"){
     var yLabel = "Student Population";
   }
 
@@ -641,7 +644,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
     .offset([90, 90])
     .html(function(d) {
       console.log(d);
-      return (`<strong>${d.name}<br>${d.State}</strong><br>${xLabel} ${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}`);
+      return (`<strong>${d.Name}<br>${d.State}</strong><br>${xLabel} ${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}`);
     });
 
     // Create Circles Tooltip in the Chart
@@ -782,14 +785,14 @@ var circlesGroup = chartGroup.selectAll(".stateCircle")
 .enter()
 .append("circle")
 .attr("cx", d => xLinearScale(d[chosenXAxis]))
-.attr("cy", function (state_data) {
-  console.log(state_data);
-  //coords = projection([d.longitude, d.latitude])
-  return yLinearScale(state_data[chosenYAxis]);
-})
-//.attr("cy", d => yLinearScale(d[chosenYAxis]))
+// .attr("cy", function (state_data) {
+//   console.log(state_data);
+//   //coords = projection([d.longitude, d.latitude])
+//   return yLinearScale(state_data[chosenYAxis]);
+// })
+.attr("cy", d => (d[chosenYAxis]))
 .attr("class", "stateCircle")
-.attr("r", 15)
+.attr("r", 5)
 .attr("opacity", ".75");
 
 
@@ -1005,7 +1008,3 @@ yLabelsGroup.selectAll("text")
 
 
   })
-
-
-
-
