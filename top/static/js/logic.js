@@ -48,7 +48,7 @@ var maxBounds = [
 var map = L.map("map-id", {
   center: [39.8, -98.5],
   //setView:[39.8, -98.5]
-  zoom: 16,
+  zoom: 4,
   layers: [
     layers.PUBLIC,
     layers.PRIVATE
