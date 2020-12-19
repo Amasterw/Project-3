@@ -48,7 +48,7 @@ var maxBounds = [
 var map = L.map("map-id", {
   center: [39.8, -98.5],
   //setView:[39.8, -98.5]
-  zoom: 16,
+  zoom: 4,
   layers: [
     layers.PUBLIC,
     layers.PRIVATE
@@ -552,7 +552,7 @@ function build_svgmap(enabledType,enabledSettings) {
     //create scale function for the chart
     var xLinearScale = d3.scaleLinear()
       .domain([d3.min(state_data, d => d[chosenXAxis]) ,
-        d3.max(state_data, d => d[chosenXAxis]) * 1.2
+        d3.max(state_data, d => d[chosenXAxis])
       ])
       .range([0, width]);
       console.log(xLinearScale);
@@ -621,7 +621,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
   if (chosenXAxis === "Acceptance Rate") {
     var xLabel = "Acceptance Rate";
   }
-  else  {
+  else if (chosenXAxis == "Alumni Salary")  {
     var xLabel = "Alumni Salary";
   }
   
@@ -790,7 +790,7 @@ var circlesGroup = chartGroup.selectAll(".stateCircle")
 //   //coords = projection([d.longitude, d.latitude])
 //   return yLinearScale(state_data[chosenYAxis]);
 // })
-.attr("cy", d => (d[chosenYAxis]))
+.attr("cy", d => yLinearScale(d[chosenYAxis]))
 .attr("class", "stateCircle")
 .attr("r", 5)
 .attr("opacity", ".75");
