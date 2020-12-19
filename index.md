@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Project-3
 
-You can use the [editor on GitHub](https://github.com/Amasterw/Project-3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Introduction - College Navigator
+Our team created a responsive map of accredited United States’ colleges and universities.The website features interactive capabilities that allows users to utilize multiple drop down menus to filter selected search criteria. Users are able make a refined search of the different institutions by such fields as: 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Amasterw/Project-3/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+State or US region
+School type (public, private non-profit, private for profit, trade schools, graduate schools)
+Major or academic field of interest 
+School population 
+Class size (if available)
+Campus size
+Campus setting (urban, suburban, rural)
+Application number and acceptance rate
+Academic ranking (for top 650 schools only) 
+Sports conference or sporting division available at that school (basketball + football)
+Tuition cost, and potentially average student debt upon graduation
