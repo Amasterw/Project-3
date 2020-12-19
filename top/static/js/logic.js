@@ -37,10 +37,10 @@ var layers = {
   //PRIVATE_FORPROFIT: new L.LayerGroup()
 };
 
-var maxBounds = [
-  [5.499550, -167.276413], //Southwest
-  [83.162102, -52.233040]  //Northeast
-];
+// var maxBounds = [
+//   [5.499550, -167.276413], //Southwest
+//   [83.162102, -52.233040]  //Northeast
+// ];
 
 
 
@@ -56,8 +56,8 @@ var map = L.map("map-id", {
     //layers.PRIVATE_FORPROFIT
   ]
 });
-map.setMaxBounds(maxBounds);
-map.fitBounds(maxBounds);
+// map.setMaxBounds(maxBounds);
+// map.fitBounds(maxBounds);
 
 // Add our 'lightmap' tile layer to the map
 base.addTo(map);
