@@ -353,6 +353,20 @@ function update(){
   
   map.removeLayer(layers['PUBLIC']);
   map.removeLayer(layers['PRIVATE']);
+  var marker = new Array();
+
+
+  if(marker.length != 0){
+    for (var i=0;i<marker.length;i++){
+    console.log(map.hasLayer);
+    console.log(marker[0]);
+    console.log(marker);
+    map.removeLayer(marker[i]);
+    //newMarkers.clearLayers();
+  }
+
+  }
+ 
   
 
   console.log(data.length);
@@ -429,7 +443,7 @@ function update(){
 console.log(layers);
 
 
-
+    //var marker = new Array();
   
    for (var i = 0; i < state_data.length; i++) {
       
@@ -459,10 +473,14 @@ console.log(layers);
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
     //newMarker.addTo(layers[typeCode]);
-    newMarker.addTo(map);
+    marker.push(newMarker);
+    map.addLayer(marker[i]);
+    
+    //map.addLayer(newMarker);
+    //newMarker.addTo(map);
     
 
-    console.log(newMarker);
+    console.log(marker);
     
 
       //console.log(properties.Name);
@@ -526,10 +544,7 @@ function build_svgmap(enabledType,enabledSettings) {
                   .attr("width",svgWidth )
                   .attr("height", svgHeight);
 
-  if (!svg.empty()) {
-    console.log(svg);
-    svg.remove();
-    }
+  
 
   var chartGroup = svgArea.append("g")
                           .attr("transform",`translate(${margin.left}, ${margin.top})`)
