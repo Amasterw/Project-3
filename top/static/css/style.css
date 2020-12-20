@@ -34,3 +34,23 @@ body{
 .legend .public {
   color: #007dff;
 }
+
+/* #table-area th {
+  text-align: center;
+} */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+table {
+  border-spacing: 5px;
+}
+/* #table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(7) {
+  min-width: 70px;
+} */

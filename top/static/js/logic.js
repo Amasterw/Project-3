@@ -101,22 +101,18 @@ var icons = {
     shape: "penta"
   }),
 
-  // PRIVATE_NONPROFIT: L.ExtraMarkers.icon({
-  //   icon: "ion-minus-circled",
-  //   iconColor: "white",
-  //   markerColor: "yellow",
-  //   shape: "penta"
-  // }),
-  // PRIVATE_FORPROFIT: L.ExtraMarkers.icon({
-  //   icon: "ion-plus-circled",
-  //   iconColor: "white",
-  //   markerColor: "red",
-  //   shape: "penta"
-  // })
 };
+
+
+
 
 // Perform an API call to the Citi Bike Station Information endpoint
 d3.json("static/data/top_college_final_latlon_json.json", function(data) {
+
+  
+    
+
+
   //var type=document.getElementById("type");
   //console.log(type);
   var type=[];
@@ -126,12 +122,13 @@ d3.json("static/data/top_college_final_latlon_json.json", function(data) {
     var t=data[i].properties['Public/Private'];
     type.push(t);
     //var type=data[i].properties.map(entry=>entry['Public/Private']);
-    console.log(t);
+    //console.log(t);
     var s=data[i].properties.State;
     state.push(s);
     //var uniqueCountry=[...new Set(dupCountry)];
 
   }
+  console.log(state);
   // adding values for type in html
   var type_f=[...new Set(type)];
   console.log(type_f);
@@ -295,7 +292,7 @@ checkboxes_t.forEach(function(checkbox) {
       //console.log(properties.Name);
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML
     var p=properties.Website;
-    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
+    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City +"<br> State: " + properties.State  + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
       
   }
     
@@ -314,7 +311,7 @@ checkboxes_t.forEach(function(checkbox) {
               layer.setStyle({
                 fillOpacity: 0.9
               });
-              //layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr>");
+              
             },
             // When the cursor no longer hovers over a map feature - when the mouseout event occurs - the feature's opacity reverts back to 50%
             mouseout: function(event) {
@@ -338,13 +335,8 @@ checkboxes_t.forEach(function(checkbox) {
           // Giving each feature a pop-up with information pertinent to it
           layer.bindPopup("<h1>" + feature.properties.name + "</h1>");
           //console.log(document.getElementById(this.event));
-
-    
         }
-        
-        
-
-        
+       
       }).addTo(map);
     });
       
@@ -358,8 +350,11 @@ checkboxes_t.forEach(function(checkbox) {
 // console.log(button);
 document.querySelector('button').onclick=function(){update()};
 function update(){
+  
   map.removeLayer(layers['PUBLIC']);
   map.removeLayer(layers['PRIVATE']);
+  
+
   console.log(data.length);
   //console.log((enabledSettings).includes(data[0].properties.State));
   type_data=[];
@@ -433,6 +428,8 @@ function update(){
 
 console.log(layers);
 
+
+
   
    for (var i = 0; i < state_data.length; i++) {
       
@@ -461,29 +458,24 @@ console.log(layers);
       //console.log(geometry.x);
       //console.log(layers[typeCode]);
       // Add the new marker to the appropriate layer
-    newMarker.addTo(layers[typeCode]);
+    //newMarker.addTo(layers[typeCode]);
     newMarker.addTo(map);
+    
+
     console.log(newMarker);
     
 
       //console.log(properties.Name);
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML
     var p=properties.Website;
-    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
+    newMarker.bindPopup(properties.Name + "<br> City: " + properties.City +"<br> State: " + properties.State + "<br> Website: <a href='https://"+properties.Website+"' "+"target='_blank'>" + properties.Website+"</a>");
       
   }
   //map.addLayer(layers['PUBLIC']);
   updateLegend(typeCount);
   console.log(enabledType,enabledSettings);
+
   build_svgmap(enabledType,enabledSettings);
-
-
-
-  
-  //console.log(filteredData);
-  //var filteredData = data.filter(data => data.properties.State IN (enabledSettings));
-  
-
 
 }
 
@@ -503,13 +495,17 @@ function updateLegend(typeCount) {
 function build_svgmap(enabledType,enabledSettings) {
   console.log(enabledType,'\n',enabledSettings)
 
-  var svgArea = d3.select("body").select("svg");
-  console.log(svgArea);
+  var svg = d3.select("body").select("svg");
+  console.log(svg);
+  d3.select("svg").remove();
 
-  // Clear SVG is Not Empty
-  if (!svgArea.empty()) {
-    svgArea.remove();
+  // Clear if SVG is Not Empty
+  if (!svg.empty()) {
+    console.log(svg);
+    svg.remove();
   }
+
+  console.log(svg);
   
   
   
@@ -534,6 +530,11 @@ function build_svgmap(enabledType,enabledSettings) {
                   .append("svg")
                   .attr("width",svgWidth )
                   .attr("height", svgHeight);
+
+  if (!svg.empty()) {
+    console.log(svg);
+    svg.remove();
+    }
 
   var chartGroup = svgArea.append("g")
                           .attr("transform",`translate(${margin.left}, ${margin.top})`)
@@ -985,22 +986,22 @@ yLabelsGroup.selectAll("text")
     }
   }
 });
+
+
+console.log(state_data);
+  var tbody=d3.select("tbody");
+  tbody.html("");
+  state_data.forEach((college) => {
+  var row = tbody.append("tr");
+  Object.entries(college).forEach(([key, value]) => {
+    var cell = row.append("td");
+    cell.text(value);
+    });
+  });
+
+
 });
 }
-
-
-
-
-
-
-
-
-  
- 
-  // Clear SVG is Not Empty
-// if (!svgArea.empty()) {
-//   svgArea.remove();
-// }
 
 
 
