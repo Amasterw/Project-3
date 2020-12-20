@@ -495,17 +495,11 @@ function updateLegend(typeCount) {
 function build_svgmap(enabledType,enabledSettings) {
   console.log(enabledType,'\n',enabledSettings)
 
-  var svg = d3.select("body").select("svg");
-  console.log(svg);
-  d3.select("svg").remove();
+  
 
   // Clear if SVG is Not Empty
-  if (!svg.empty()) {
-    console.log(svg);
-    svg.remove();
-  }
-
-  console.log(svg);
+  d3.select("#the_SVG_ID").remove();
+  
   
   
   
@@ -528,6 +522,7 @@ function build_svgmap(enabledType,enabledSettings) {
 
   var svgArea = d3.select("#svg1")
                   .append("svg")
+                  .attr("id","the_SVG_ID")
                   .attr("width",svgWidth )
                   .attr("height", svgHeight);
 
