@@ -658,6 +658,16 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
       return (`<strong>${d.Name}<br>${d.State}</strong><br>${xLabel} ${d[chosenXAxis]}<br>${yLabel} ${d[chosenYAxis]}`);
     });
 
+
+    d3.select("#title").remove();
+      chartGroup.append("text")
+      .attr("id","title")
+    .attr("x", width / 2 )
+    .attr("y", 0)
+    .style("text-anchor", "middle","strong")
+    .text(xLabel +"   Vs    "+yLabel);
+
+
     // Create Circles Tooltip in the Chart
     circlesGroup.call(toolTip);
     // Create Event Listeners to Display and Hide the Circles Tooltip
