@@ -355,8 +355,8 @@ function update(){
   map.removeLayer(layers['PRIVATE']);
   var marker = new Array();
   
-  var mark=d3.select(".leaflet-marker-pane");
-  mark.html("");
+//   var mark=d3.select(".leaflet-marker-pane");
+//   mark.html("");
 
 
   if(marker.length != 0){
