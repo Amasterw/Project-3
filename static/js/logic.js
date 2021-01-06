@@ -348,12 +348,13 @@ checkboxes_t.forEach(function(checkbox) {
     build_svgmap(enabledType,enabledSettings)
 //     var button=d3.select("#form");
 // console.log(button);
+  var marker = new Array();
 document.querySelector('button').onclick=function(){update()};
 function update(){
   
   map.removeLayer(layers['PUBLIC']);
   map.removeLayer(layers['PRIVATE']);
-  var marker = new Array();
+  
   
   var mark=d3.select(".leaflet-marker-pane");
   mark.html("");
